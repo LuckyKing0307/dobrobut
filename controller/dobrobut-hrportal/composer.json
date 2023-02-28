@@ -1,0 +1,8 @@
+{
+    "require": {
+        "datto/json-rpc": "^6.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-pgsql": "*"
+    }
+}

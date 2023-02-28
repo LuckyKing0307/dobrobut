@@ -1,0 +1,2453 @@
+{
+"action": "department",
+"fields": [
+{
+"ID": "796c02f0-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7fae2e60-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7fae2e61-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4860"
+},
+{
+"ID": "a019514f-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення невідкладної допомоги ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "8e0bca8e-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "8e0bca8f-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4450"
+},
+{
+"ID": "8e0bca90-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Поліклініка для дітей ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3792"
+},
+{
+"ID": "8e0bca91-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Поліклініка для дорослих ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3792"
+},
+{
+"ID": "8e0bca92-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3800"
+},
+{
+"ID": "b82b1d8f-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "b82b1d90-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "c2e2420a-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3596"
+},
+{
+"ID": "3969f4c8-a0a1-11e8-80cc-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4269"
+},
+{
+"ID": "4d5a8b97-a0a1-11e8-80cc-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4269"
+},
+{
+"ID": "59e875b6-a0a1-11e8-80cc-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3708"
+},
+{
+"ID": "7133c9ab-a0a1-11e8-80cc-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Сектор сестринської справи ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3621"
+},
+{
+"ID": "0dcc0ab0-dd11-11e8-80d1-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Служба виїзних послуг ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "4a4fe391-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП (проспект Героїв Сталінграду, б.4, корп.5)",
+"PARENT_ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "4a4fe392-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП (проспект Героїв Сталінграду, б.4, корп.5)",
+"PARENT_ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "5680d18a-2e74-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП (проспект Героїв Сталінграду, б.4, корп.5)",
+"PARENT_ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "8e0bca97-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП (проспект Героїв Сталінграду, б.4, корп.5)",
+"PARENT_ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "8e0bca98-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення поліклініки ВСП (проспект Героїв Сталінграду, б.4, корп.5)",
+"PARENT_ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "5e586796-f7b5-11ec-bde1-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Департамент маркетингу ЦО",
+"PARENT_ID": "6d90a817-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4808"
+},
+{
+"ID": "8e0bca9a-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація Медичний центр (вулиця Мишуги, 12)",
+"PARENT_ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "8e0bca9b-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення поліклініки Медичний центр (вулиця Мишуги, 12)",
+"PARENT_ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3691"
+},
+{
+"ID": "4bdef8ef-28ee-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент Медичний центр (вулиця Мишуги, 12)",
+"PARENT_ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "85eef0d9-2e72-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами Медичний центр (вулиця Мишуги, 12)",
+"PARENT_ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3455"
+},
+{
+"ID": "85eef0da-2e72-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент Медичний центр (вулиця Мишуги, 12)",
+"PARENT_ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "0f9d9403-2e73-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "173818e0-2e73-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "9a8675db-2e73-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Хірургічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3631"
+},
+{
+"ID": "8e0bca9c-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація \"ЛДЦ\" ",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3835"
+},
+{
+"ID": "8e0bca9e-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення інтенсивної терапії \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3593"
+},
+{
+"ID": "8e0bca9f-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення невідкладної допомоги \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3860"
+},
+{
+"ID": "8e0bcaa0-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Онкологічне відділення стаціонару з блоком хіміотерапії \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3765"
+},
+{
+"ID": "8e0bcaa1-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Отоларингологічне відділення та щелепно-лицьової хірургії стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3710"
+},
+{
+"ID": "8e0bcaa2-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Педіатричне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3518"
+},
+{
+"ID": "8e0bcaa3-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3831"
+},
+{
+"ID": "8e0bcaa6-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Центральне стерилізаційне відділення \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3324",
+"SORT": "100"
+},
+{
+"ID": "8e0bcaa7-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Жіноча консультація \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3680"
+},
+{
+"ID": "8e0bcaa8-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення кардіохірургії стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3938"
+},
+{
+"ID": "8e0bcaab-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення операційний блок \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "8e0bcaac-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3523"
+},
+{
+"ID": "8e0bcaad-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3613"
+},
+{
+"ID": "8e0bcaae-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Приймальне відділення \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4355"
+},
+{
+"ID": "8e0bcaaf-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "5c2794bc-47c0-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Гінекологічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5805"
+},
+{
+"ID": "75f84d21-5da3-11e8-80c5-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Урологічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4375"
+},
+{
+"ID": "b3d697a7-5da3-11e8-80c5-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Дитяче хірургічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3789"
+},
+{
+"ID": "c6dd8693-5da3-11e8-80c5-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення ортопедії та травматології стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3837"
+},
+{
+"ID": "9637d4eb-7806-11ea-80d7-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Терапевтичне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "26a30bfb-a72d-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Неврологічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5599"
+},
+{
+"ID": "9c1b9eb0-0196-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення анестезіології \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3857"
+},
+{
+"ID": "91887db5-5a43-11eb-80db-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення ендоваскулярної хірургії \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5435"
+},
+{
+"ID": "44c1d161-8250-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Сектор з догляду за хворими \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "59a8a352-52b7-11ec-bc69-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення допоміжних репродуктивних технологій \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6341"
+},
+{
+"ID": "05cf3a6b-b3c2-11eb-bbc5-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Нейрохірургічне відділення стаціонару \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3946"
+},
+{
+"ID": "0f66fe12-b955-11eb-bbc8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення дитячої анестезіології та інтенсивної терапії \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3642"
+},
+{
+"ID": "79ddc2cb-fc0a-11eb-bc04-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення кардіохірургічної інтенсивної терапії \"ЛДЦ\"",
+"PARENT_ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4142"
+},
+{
+"ID": "32d0fff3-7d26-11ed-bfb3-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Оперативно-диспетчерська група",
+"PARENT_ID": "8e0bca9f-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "c3bca86c-19b8-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами Відділення невідкладної допомоги \"ЛДЦ\"",
+"PARENT_ID": "8e0bca9f-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3415"
+},
+{
+"ID": "612bdf28-19b9-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Архів Відділення невідкладної допомоги \"ЛДЦ\"",
+"PARENT_ID": "8e0bca9f-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "eb5c9d33-19b9-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Каса Відділення невідкладної допомоги \"ЛДЦ\"",
+"PARENT_ID": "8e0bca9f-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "cb3312dc-211b-11ec-bc34-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ корпоративного обліку",
+"PARENT_ID": "8e0bcab1-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e0c33dbd-e293-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Центр клінічної неврології, нейрореабілітації та відновлювальної медицини (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e24f049b-996b-11e8-80ca-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f2863b0c-996b-11e8-80ca-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Терапевтичне відділення стаціонару (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "dd610b05-7dd6-11e8-80c7-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Департамент управління персоналом та організаційного розвитку (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "db6401ba-2e70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f123320a-2e70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f791181c-2e70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": " Технічний департамент (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1ccbebbf-0f71-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Контакт-центр (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1ccbebbb-0f71-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація (ТОВ «МЦ «Добробут-Стаціонар», пр-т Гузара, буд.3 корп.5)",
+"PARENT_ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "20a1b683-0f6f-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "20a1b688-0f6f-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3662"
+},
+{
+"ID": "7b33a7b8-26d5-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "93709a32-26d5-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4408"
+},
+{
+"ID": "c8e3779e-26d5-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3798"
+},
+{
+"ID": "cffdea6d-26d5-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1bf8d735-d178-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4408"
+},
+{
+"ID": "6d90a818-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "\"Медичний центр \"Добробут-Поліклініка\" (вулиця Мишуги, 12)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "5"
+},
+{
+"ID": "781e02f7-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "\"Лікувально-діагностичний центр \"Добробут\" (вулиця Сім'ї Ідзиковських, б.3, пр-т Повітрофлотський, б.54)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3835",
+"SORT": "6"
+},
+{
+"ID": "584a0629-26d5-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ВСП №7 (вул. Драгоманова, буд. 21-А)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "14"
+},
+{
+"ID": "55e16492-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ВСП №2 (вул. Святошинська, 3 б)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "9"
+},
+{
+"ID": "55e16493-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ВСП №3 (вул.Татарська, 2 е)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3800",
+"SORT": "10"
+},
+{
+"ID": "679535e6-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ВСП (проспект Володимира Івасюка, б.4, корп.5)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "",
+"SORT": "7"
+},
+{
+"ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023",
+"SORT": "11"
+},
+{
+"ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ \"Контакт-центр\"",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "",
+"SORT": "2"
+},
+{
+"ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "12"
+},
+{
+"ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843",
+"SORT": "13"
+},
+{
+"ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380",
+"SORT": "15"
+},
+{
+"ID": "16a4f081-b498-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №9 (проспект Миколи Бажана, б. 12 А)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380",
+"SORT": "16"
+},
+{
+"ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №10 (вул. Юлії Здановської, буд. 71-Г)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843",
+"SORT": "17"
+},
+{
+"ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №11 (вул.І.Сікорського,1)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "18"
+},
+{
+"ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ВСП №12 (вул. Драгомирова Михайла, буд.20)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "19"
+},
+{
+"ID": "f3c5c8dc-65ff-11eb-bb96-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №13 (вул. Пимоненка Миколи, буд. 10)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3860",
+"SORT": "20"
+},
+{
+"ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптека №1 (м. Київ, вул. Драгомирова Михайла, буд. 20)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4802",
+"SORT": "3"
+},
+{
+"ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №14 (Київська обл.,  м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023",
+"SORT": "21"
+},
+{
+"ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380",
+"SORT": "22"
+},
+{
+"ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №16 (Київська обл., м. Бровари, вул. Київська, буд. 221б)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3855",
+"SORT": "23"
+},
+{
+"ID": "acbdedd4-777d-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №17 (Київська обл.,  м. Біла Церква, бульвар Олександрійський, 10)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843",
+"SORT": "24"
+},
+{
+"ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Центральний офіс (вул. Сумська, б.1)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "8474",
+"SORT": "1"
+},
+{
+"ID": "f98c9eec-8ff4-11ec-bcb2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №19 (вул. Ентузіастів, буд. 1/2)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023",
+"SORT": "26"
+},
+{
+"ID": "e332195b-f5f7-11ec-bdda-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №22 (вул. Євгена Коновальця, буд. 44-А, прим. № 725)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380",
+"SORT": "29"
+},
+{
+"ID": "a6ebd91f-b4c1-11ec-bd2a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №20 (Івано-Франківська обл., місто Івано-Франківськ, вулиця Стрільців Січових, будинок 70)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "",
+"SORT": "27"
+},
+{
+"ID": "84ba1b4f-ba30-11ec-bd37-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №21 (Львівська область, м. Львів, вулиця Зелена, будинок 204 б)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "",
+"SORT": "28"
+},
+{
+"ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3629",
+"SORT": "8"
+},
+{
+"ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643",
+"SORT": "25"
+},
+{
+"ID": "e90c5390-e95a-11eb-bbed-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптека №2 (Київська обл., м. Бровари, вул. Київська, буд. 221б)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6418",
+"SORT": "4"
+},
+{
+"ID": "128c3300-1172-11ed-be3b-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ фінансової звітності та контролінгу",
+"PARENT_ID": "928ffa8b-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4817"
+},
+{
+"ID": "a76ed0ce-2f19-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий відділ",
+"PARENT_ID": "928ffa8b-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3830"
+},
+{
+"ID": "3dbd8b65-2f1a-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Бухгалтерія",
+"PARENT_ID": "928ffa8b-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3391"
+},
+{
+"ID": "16087a39-4224-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ охорони",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4943"
+},
+{
+"ID": "db326a2e-4223-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ закупівель та сервісу медичного обладнання",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3842"
+},
+{
+"ID": "e5d79848-4223-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ капітального будівництва",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6783"
+},
+{
+"ID": "efafbbeb-4223-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ енергетики",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4894"
+},
+{
+"ID": "f8d80d10-4223-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Аварійно-диспетчерська служба",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "00959344-4224-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Транспортний відділ",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4012"
+},
+{
+"ID": "bce2c4e0-296a-11ea-80d7-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Господарський відділ",
+"PARENT_ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9172"
+},
+{
+"ID": "de549445-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ кадрового адміністрування",
+"PARENT_ID": "de549444-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3846"
+},
+{
+"ID": "de549446-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ оплати праці та організаційного розвитку",
+"PARENT_ID": "de549444-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3859"
+},
+{
+"ID": "de549448-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ підбору та адаптації персоналу",
+"PARENT_ID": "de549444-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4214"
+},
+{
+"ID": "de54944a-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Відділ інформаційних технологій",
+"PARENT_ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3418"
+},
+{
+"ID": "31098f52-c257-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ медичних інформаційних систем",
+"PARENT_ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3627"
+},
+{
+"ID": "22563fbb-7191-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ розробки програмного забезпечення",
+"PARENT_ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3416"
+},
+{
+"ID": "8fb892fd-0025-11ec-bc09-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ інформаційної безпеки",
+"PARENT_ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e3abe25c-96b1-11eb-bba8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ цифрової трансформації",
+"PARENT_ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5668"
+},
+{
+"ID": "4f68460f-b4fb-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група адміністрування інфраструктури",
+"PARENT_ID": "de54944a-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9384"
+},
+{
+"ID": "de54944b-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Група підтримки користувачів",
+"PARENT_ID": "de54944a-32c1-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9598"
+},
+{
+"ID": "d60a22ac-3407-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023"
+},
+{
+"ID": "45b6085b-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "4f207b81-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "5a22bf41-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4054"
+},
+{
+"ID": "72ce8d01-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4302"
+},
+{
+"ID": "92e1cedf-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4245"
+},
+{
+"ID": "9fadedce-503b-11e8-80c3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №4 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "b94eb3b5-3407-11e8-80bc-005056baf5c4",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3565"
+},
+{
+"ID": "6ae7772a-d1eb-11e8-80d1-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група навчання та стажування Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4085"
+},
+{
+"ID": "5c772ec9-17e5-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група №1 Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3805"
+},
+{
+"ID": "63e103c8-17e5-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група №2 Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9220"
+},
+{
+"ID": "970bdaa1-17e5-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група №3 Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4492"
+},
+{
+"ID": "4a4b06ed-b61c-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Оперативно-диспетчерська група Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "6ffdcc27-8d3c-11eb-bba6-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Група №4 Відділ \"Контакт-центр\"",
+"PARENT_ID": "7a9c75b5-d1ea-11e8-80d1-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4557"
+},
+{
+"ID": "c4c10a5e-e29a-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Неврологічне відділення стаціонару",
+"PARENT_ID": "e0c33dbd-e293-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "10efb93e-e29b-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення анестезіології та інтенсивної терапії",
+"PARENT_ID": "e0c33dbd-e293-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "aef904cd-e74e-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e1d863da-f87a-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5186"
+},
+{
+"ID": "ef14592e-f87a-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5186"
+},
+{
+"ID": "fcfbf87a-f87a-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Педіатричне відділення стаціонару ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5186"
+},
+{
+"ID": "0b6b7d2a-f87b-11e8-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4211"
+},
+{
+"ID": "d51baa09-09e8-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "4f9bc16c-1001-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "37be3e4e-1002-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4938"
+},
+{
+"ID": "80e280ef-6d10-11ea-80d7-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення стаціонару ВСП №5 (Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "56865cac-e74e-11e8-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "b4d8d4af-3f33-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Група супроводження пацієнтів",
+"PARENT_ID": "757cd34b-05d1-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "9880f8d6-24a3-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Сектор по роботі з юридичними особами Група №1 Відділ \"Контакт-Центр\"",
+"PARENT_ID": "5c772ec9-17e5-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "93b19d4a-291f-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843"
+},
+{
+"ID": "5cce199d-61e2-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "702ae43c-61e2-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7f3ef241-61e2-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4110"
+},
+{
+"ID": "8e2351b1-61e2-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3483"
+},
+{
+"ID": "2ce1c5f4-673e-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №6 (вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "f5347a7d-291d-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5887"
+},
+{
+"ID": "f1df14a6-df6e-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Сектор з нарахування заробітної плати",
+"PARENT_ID": "3dbd8b65-2f1a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4419"
+},
+{
+"ID": "1158ee10-5d4b-11ea-80d7-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з юридичними особами",
+"PARENT_ID": "d7dce8d0-3397-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3464"
+},
+{
+"ID": "7cce2edd-ab1a-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ із зовнішньоекономічної діяльності",
+"PARENT_ID": "d7dce8d0-3397-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3839"
+},
+{
+"ID": "271391e3-ab0d-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Департамент з розвитку та навчання персоналу ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4809"
+},
+{
+"ID": "fe91d425-a247-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Служба охорони праці ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4224"
+},
+{
+"ID": "757cd34b-05d1-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Служба сервісу та клієнтського обслуговування ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "de549444-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Департамент управління персоналом та організаційного розвитку ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4215"
+},
+{
+"ID": "928ffa8b-2e71-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4870"
+},
+{
+"ID": "b88e9ea9-2e71-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Юридичний департамент ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3757"
+},
+{
+"ID": "d4207ee0-2e71-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3559"
+},
+{
+"ID": "6d90a817-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Департамент маркетингу ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9354"
+},
+{
+"ID": "8e0bcab1-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "8474"
+},
+{
+"ID": "222e9e6c-8273-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": " Медичний департамент ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3468"
+},
+{
+"ID": "da2ec7fb-21c2-11ec-bc35-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Дирекція директора виконавчого",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4423"
+},
+{
+"ID": "1c3116e8-3b08-11ec-bc53-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Департамент із зв'язків з громадськістю та комунікацій ЦО",
+"PARENT_ID": "ad22604e-3f2a-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f88ffbd9-a4ac-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ТОВ \"МЦ \"Добробут-Патронаж\"",
+"PARENT_ID": "9cbb1af4-a927-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "09a14e87-a493-11e9-80d3-005056baf4c5",
+"HEADER": "3800"
+},
+{
+"ID": "bfd340f7-a892-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення патронажу ТОВ \"МЦ \"Добробут-Патронаж\"",
+"PARENT_ID": "9cbb1af4-a927-11e9-80d3-005056baf4c5",
+"ORGANIZATION_ID": "09a14e87-a493-11e9-80d3-005056baf4c5",
+"HEADER": "4269"
+},
+{
+"ID": "8ce5fdb2-cdad-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380"
+},
+{
+"ID": "2d25702e-cdae-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення стоматології ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4379"
+},
+{
+"ID": "71b264fa-cdaf-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "92760a19-cdaf-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4390"
+},
+{
+"ID": "534dafb6-cdb0-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №8 (проспект Володимира Івасюка, б. 16 В)",
+"PARENT_ID": "f6bc98c1-b497-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "4a34e143-d6fd-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №9 (проспект Миколи Бажана, б. 12 А)",
+"PARENT_ID": "16a4f081-b498-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380"
+},
+{
+"ID": "04f71433-cbfb-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №1 (м. Київ, проспект Бажана, буд. 12-А)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4803"
+},
+{
+"ID": "3633cc57-cbfb-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №2 (м. Київ, вул. Сікорського, буд.1)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5578"
+},
+{
+"ID": "0899e551-ccc7-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №4 (м. Київ, вул.Татарська, буд.2-Е)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4911"
+},
+{
+"ID": "a6500877-ccdb-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №3 (м. Київ, вул. Самійла Кішки, буд.10/1)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5200"
+},
+{
+"ID": "7b4058ad-4ea0-11eb-80db-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №5 (м. Київ, проспект Володимира Івасюка, буд.16)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5257"
+},
+{
+"ID": "db7b338f-4ea0-11eb-80db-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №6 (м. Київ, вул. Святошинська, буд.3-Б)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4804"
+},
+{
+"ID": "f895e56c-4ea0-11eb-80db-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №7 (м. Київ, вул. Драгоманова, буд.21-А)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "10445"
+},
+{
+"ID": "6981d519-0a25-11ec-bc16-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №10 (м. Київ, вул. Сім'ї Ідзиковських, буд.3)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9175"
+},
+{
+"ID": "a26c8c87-9085-11eb-bba6-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №8 (м. Київ, проспект Повітрофлотський, будинок 54)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5717"
+},
+{
+"ID": "ea197f74-9085-11eb-bba6-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №9 (Київська обл., м. Ірпінь, вулиця Грибоєдова, будинок 8-а)",
+"PARENT_ID": "6fb2367b-b6d8-11ea-80d9-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "0b78bfcb-4224-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Клінічний відділ",
+"PARENT_ID": "1f914f78-c5de-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3491"
+},
+{
+"ID": "cda3f748-fbe1-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №10 (вул.Ломоносова,буд.71-Г)",
+"PARENT_ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "75309408-d7ed-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення дерматовенерології ВСП №10 (вул. Ломоносова, буд. 71-Г)",
+"PARENT_ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4028"
+},
+{
+"ID": "631abfd4-d649-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №10 (вул. Юлії Здановської, буд. 71-Г)",
+"PARENT_ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843"
+},
+{
+"ID": "7b845e33-eb79-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №10 (вул. Ломоносова, буд. 71-Г)",
+"PARENT_ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4110"
+},
+{
+"ID": "4f176b46-07b8-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінасовий департамент ВСП №10 (вул.Ломоносова,буд.71-Г)",
+"PARENT_ID": "f93dbda3-cb66-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "358e68d2-dadf-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація (ТОВ \"МЦ \"Добробут-Вертебрологія\", пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3716"
+},
+{
+"ID": "0e64ba9a-233c-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділення амбулаторної допомоги (ТОВ \"МЦ \"Добробут-Вертебрологія\", пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "1cb2e8cb-233c-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент (ТОВ \"МЦ \"Добробут-Вертебрологія\", пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "3055c5bc-233c-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент (ТОВ \"МЦ \"Добробут-Вертебрологія\", пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "3ce53d49-233c-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами (ТОВ \"МЦ \"Добробут-Вертебрологія\", пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3511"
+},
+{
+"ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ВСП №1 ТОВ ''МЦ ''Добробут-Вертебрологія\" (Київська обл., м. Бровари, вул. Київська, буд. 221б)",
+"PARENT_ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3716"
+},
+{
+"ID": "5539f0b2-f2a5-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №11 (вул.Сікорського,1)",
+"PARENT_ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "951cd807-0c70-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення ВСП №11 (вул.Сікорського,1)",
+"PARENT_ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4824"
+},
+{
+"ID": "c661c1e5-0c70-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №11 (вул.Сікорського,1)",
+"PARENT_ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e5607bc0-0c70-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №11 (вул.Сікорського,1)",
+"PARENT_ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "5636008c-0c74-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №11 (вул.Сікорського,1)",
+"PARENT_ID": "e866d5dd-f2a3-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3405"
+},
+{
+"ID": "62cfd677-0c71-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення ВСП №12 (вул.Драгомирова Михайла,20)",
+"PARENT_ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4824"
+},
+{
+"ID": "7634cbde-0c71-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №12 (вул.Драгомирова Михайла,20)",
+"PARENT_ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "8491e438-0c71-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №12 (вул.Драгомирова Михайла,20)",
+"PARENT_ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "47bea21f-0c74-11eb-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №12 (вул.Драгомирова Михайла,20)",
+"PARENT_ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3405"
+},
+{
+"ID": "1af8ecd6-f32e-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №12 (вул.Драгомирова Михайла,20)",
+"PARENT_ID": "0fde58aa-f2ae-11ea-80da-005056baf4c5",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "38ac4007-6600-11eb-bb96-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №13 (вул. Пимоненка Миколи, буд. 10)",
+"PARENT_ID": "f3c5c8dc-65ff-11eb-bb96-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3860"
+},
+{
+"ID": "11090c02-a7f6-11eb-bbb8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №13 (вул. Пимоненка Миколи, буд. 10)",
+"PARENT_ID": "f3c5c8dc-65ff-11eb-bb96-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1eaefdc7-a7f6-11eb-bbb8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення невідкладної допомоги ВСП №13 (вул. Пимоненка Миколи, буд. 10)",
+"PARENT_ID": "f3c5c8dc-65ff-11eb-bb96-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7a821972-8278-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "924df724-8278-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3561"
+},
+{
+"ID": "9f340def-8278-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3561"
+},
+{
+"ID": "e196770a-8278-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4450"
+},
+{
+"ID": "4fe246fd-8279-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами  ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5743"
+},
+{
+"ID": "5ce50bf1-8279-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент  ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "343b6526-7780-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №14 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "fd56b3e5-7779-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023"
+},
+{
+"ID": "89312b04-7780-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380"
+},
+{
+"ID": "aa778084-8250-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f60d4dd5-938c-11eb-bba8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "c9561261-938c-11eb-bba8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення стоматології ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "da8bc3b9-938c-11eb-bba8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "cb5deadd-777a-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e8a26bb7-f4f9-11eb-bbfb-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення невідкладної допомоги ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "b39789e9-8189-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5014"
+},
+{
+"ID": "c4ff827e-8189-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5014"
+},
+{
+"ID": "d3443574-8189-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3834"
+},
+{
+"ID": "e469744a-8189-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f2099dba-8189-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "010ce19f-818a-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6804"
+},
+{
+"ID": "cc67b1e4-7780-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №16  (Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "5b5ad014-777c-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3855"
+},
+{
+"ID": "0129de66-7781-11eb-bb9d-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №17 (Київська обл., м. Біла Церква, бульвар Олександрійський, 10)",
+"PARENT_ID": "acbdedd4-777d-11eb-bb9d-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3843"
+},
+{
+"ID": "2b287b1d-81af-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №1 (ТОВ \"МЦ \"Добробут-Вертебрологія, Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3716"
+},
+{
+"ID": "a286406b-fe73-11eb-bc07-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №1 (ТОВ \"МЦ \"Добробут-Вертебрологія, Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3511"
+},
+{
+"ID": "bf4a98cd-fe73-11eb-bc07-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент  ВСП №1 (ТОВ \"МЦ \"Добробут-Вертебрологія, Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "b2a438c9-eac9-11eb-bbee-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення амбулаторної допомоги ВСП №1 (ТОВ \"МЦ \"Добробут-Вертебрологія, Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "12de9e67-0995-11ec-bc15-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №1 (ТОВ \"МЦ \"Добробут-Вертебрологія, Київська обл.,  м. Бровари, вул. Київська, буд 221б)",
+"PARENT_ID": "e299569c-81ae-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": ""
+},
+{
+"ID": "e932bd20-938c-11eb-bba8-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №15 (Київська обл., м. Ірпінь, вул. Грибоєдова, буд. 8-а)",
+"PARENT_ID": "aa778084-8250-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "66e35fb5-8273-11eb-bba2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ правового забезпечення медичної діяльності та ліцензування",
+"PARENT_ID": "222e9e6c-8273-11eb-bba2-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3852"
+},
+{
+"ID": "fc5288f1-5699-11ec-bc6e-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення променевої діагностики ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5373"
+},
+{
+"ID": "e6f39ac5-e8a0-11eb-bbed-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3629"
+},
+{
+"ID": "0ad4d148-4e20-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами поліклінічних відділень ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5122"
+},
+{
+"ID": "6d56d151-4e20-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами приймального та стаціонарних відділень ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3781"
+},
+{
+"ID": "a83cc30f-4e20-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення анестезіології та інтенсивної терапії ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4451"
+},
+{
+"ID": "2dd14877-4e23-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення операційний блок  ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7ba85164-4e23-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Стаціонарне відділення для дітей ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6657"
+},
+{
+"ID": "930cccc8-4e23-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Стаціонарне відділення для дорослих ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3581"
+},
+{
+"ID": "bc4877f8-4e23-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дітей ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "6657"
+},
+{
+"ID": "d2d6d660-4e23-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення для дорослих ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3501"
+},
+{
+"ID": "1032d1ae-4e24-11ed-bf1a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "6162808a-6745-11ed-bf79-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Приймальне відділення ВСП №1 (проспект Миколи Бажана, буд. 12 А)",
+"PARENT_ID": "bb8fbef4-e8a0-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "f1d9a701-e8a1-11eb-bbed-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3643"
+},
+{
+"ID": "e0104bc9-080e-11ec-bc13-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1d018a15-0810-11ec-bc13-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7133b1c4-0811-11ec-bc13-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Фінансовий департамент №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "e04359d7-0812-11ec-bc13-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення №18 (вулиця Вишгородська, буд. 45)",
+"PARENT_ID": "be32ce2e-e8a1-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "99f64bf9-1ac2-11ec-bc2c-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №1 (Київська обл., c. Софіївська Борщагівка, вул. Яблунева, буд.26)",
+"PARENT_ID": "e90c5390-e95a-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9284"
+},
+{
+"ID": "ef0d4d7c-7616-11ed-bfa1-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Аптечний пункт №2 (проспект Бажана Миколи, будинок 12 А)",
+"PARENT_ID": "e90c5390-e95a-11eb-bbed-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "9457"
+},
+{
+"ID": "d7dce8d0-3397-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Департамент з корпоративних продажів ЦО",
+"PARENT_ID": "da2ec7fb-21c2-11ec-bc35-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "3695"
+},
+{
+"ID": "de549449-32c1-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "Департамент інформаційних технологій ЦО",
+"PARENT_ID": "da2ec7fb-21c2-11ec-bc35-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4815"
+},
+{
+"ID": "17269465-aef2-11ea-80d9-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Аналітичний відділ ЦО",
+"PARENT_ID": "da2ec7fb-21c2-11ec-bc35-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "1f914f78-c5de-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "Фармацевтичний департамент",
+"PARENT_ID": "da2ec7fb-21c2-11ec-bc35-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4889"
+},
+{
+"ID": "0b37a4bf-55d2-11ed-bf3b-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Факультет післядипломної підготовки",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": ""
+},
+{
+"ID": "e8271bec-3638-11ec-bc50-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Навчальний відділ",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "5313",
+"SORT": "5"
+},
+{
+"ID": "4a6f065c-3b25-11ec-bc53-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Департамент грантової підтримки",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "",
+"SORT": "1"
+},
+{
+"ID": "0c747d7c-3bba-11ec-bc54-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Кафедра загальної медицини",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "3850",
+"SORT": "3"
+},
+{
+"ID": "56bd119e-43cd-11ec-bc5a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Навчально-тренувальний центр",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "4432",
+"SORT": "6"
+},
+{
+"ID": "321c57b0-4c67-11ec-bc61-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Кафедра здоров'я матері та дитини",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "9589",
+"SORT": "4"
+},
+{
+"ID": "77ea3b20-4d2e-11ec-bc62-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Науково-дослідницький центр",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "",
+"SORT": "7"
+},
+{
+"ID": "4f90ad7c-720a-11ec-bc85-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ зв'язків із громадськістю",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": ""
+},
+{
+"ID": "a8230691-8046-11ec-bc95-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Кафедра медицини голови та шиї",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "3710",
+"SORT": "2"
+},
+{
+"ID": "1fc9aa0c-3722-11ec-bc51-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Кафедра анестезіології та хірургії",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "3593",
+"SORT": "2"
+},
+{
+"ID": "d37cc5e6-93e1-11ec-bcc1-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Бухгалтерія",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "",
+"SORT": "1"
+},
+{
+"ID": "9566eb02-f922-11eb-bc00-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Ректорат",
+"PARENT_ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": "",
+"SORT": "8"
+},
+{
+"ID": "4bf3bd67-ba0e-11eb-bbc9-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація БО ",
+"PARENT_ID": "1e1e0959-3642-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "98290844-ba08-11eb-bbc9-005056960e2b",
+"HEADER": "3794"
+},
+{
+"ID": "d4ed5a5b-93e2-11ec-bcc1-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Бухгалтерія БО",
+"PARENT_ID": "1e1e0959-3642-11ec-bc50-005056960e2b",
+"ORGANIZATION_ID": "98290844-ba08-11eb-bbc9-005056960e2b",
+"HEADER": "4220"
+},
+{
+"ID": "2ad38db7-4df0-11ec-bc63-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Прес-центр",
+"PARENT_ID": "1c3116e8-3b08-11ec-bc53-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7b4ec764-52b8-11ec-bc69-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Ембріологічна лабораторія \"ЛДЦ\"",
+"PARENT_ID": "59a8a352-52b7-11ec-bc69-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "2136b806-8ff5-11ec-bcb2-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №19 (вул. Ентузіастів, буд. 1/2)",
+"PARENT_ID": "f98c9eec-8ff4-11ec-bcb2-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "5023"
+},
+{
+"ID": "23e5416e-b4c2-11ec-bd2a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №20 (Івано-Франківська обл., місто Івано-Франківськ, вулиця Стрільців Січових, будинок 70)",
+"PARENT_ID": "a6ebd91f-b4c1-11ec-bd2a-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "46bc8eb8-b4c2-11ec-bd2a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №20 (Івано-Франківська обл., місто Івано-Франківськ, вулиця Стрільців Січових, будинок 70)",
+"PARENT_ID": "a6ebd91f-b4c1-11ec-bd2a-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "7aa13f4b-b4c2-11ec-bd2a-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Полікінічне відділення ВСП №20 (Івано-Франківська обл., місто Івано-Франківськ, вулиця Стрільців Січових, будинок 70)",
+"PARENT_ID": "a6ebd91f-b4c1-11ec-bd2a-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "a3cb7508-ba30-11ec-bd37-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №21 (Львівська область, м. Львів, вулиця Зелена, будинок 204 б)",
+"PARENT_ID": "84ba1b4f-ba30-11ec-bd37-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "dd143fed-ba30-11ec-bd37-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Поліклінічне відділення ВСП №21 (Львівська область, м. Львів, вулиця Зелена, будинок 204 б)",
+"PARENT_ID": "84ba1b4f-ba30-11ec-bd37-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "044e3446-ba31-11ec-bd37-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №21 (Львівська область, м. Львів, вулиця Зелена, будинок 204 б)",
+"PARENT_ID": "84ba1b4f-ba30-11ec-bd37-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "185bf4de-f601-11ec-bdda-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Адміністрація ВСП №22 (вул. Євгена Коновальця, буд. 44-А, прим. № 725)",
+"PARENT_ID": "e332195b-f5f7-11ec-bdda-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4380"
+},
+{
+"ID": "3a7bd980-f601-11ec-bdda-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділення стоматології ВСП №22 (вул. Євгена Коновальця, буд. 44-А, прим. № 725)",
+"PARENT_ID": "e332195b-f5f7-11ec-bdda-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4379"
+},
+{
+"ID": "6cdccdcb-f625-11ec-bdda-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Відділ по роботі з клієнтами ВСП №22 (вул. Євгена Коновальця, буд. 44-А, прим. № 725)",
+"PARENT_ID": "e332195b-f5f7-11ec-bdda-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": "4390"
+},
+{
+"ID": "a8bcfd1b-f625-11ec-bdda-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "Технічний департамент ВСП №22 (вул. Євгена Коновальця, буд. 44-А, прим. № 725)",
+"PARENT_ID": "e332195b-f5f7-11ec-bdda-005056960e2b",
+"ORGANIZATION_ID": "4a27bb87-0d97-11e8-80bc-005056baf5c4",
+"HEADER": ""
+},
+{
+"ID": "0fdd8189-db15-11ea-80da-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ТОВ «Медичний центр «Добробут-Вертебрологія» (пр-т Повітрофлотський, буд.38)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "13c26f4c-d62c-11ea-80da-005056baf4c5",
+"HEADER": "3716"
+},
+{
+"ID": "9cbb1af4-a927-11e9-80d3-005056baf4c5",
+"ACTIVE": "Y",
+"NAME": "ТОВ \"Медичний центр \"Добробут-Патронаж\" (вул. Татарська, 2-Е)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "09a14e87-a493-11e9-80d3-005056baf4c5",
+"HEADER": "3800"
+},
+{
+"ID": "f84d9f02-0f70-11e8-80bc-005056baf5c4",
+"ACTIVE": "Y",
+"NAME": "ТОВ «Медичний центр «Добробут-Стаціонар» (пр-т Гузара, буд. 3 корп.5)",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "fe3d2ff6-0d96-11e8-80bc-005056baf5c4",
+"HEADER": "3855"
+},
+{
+"ID": "f63254e9-363f-11ec-bc50-005056960e2b",
+"ACTIVE": "Y",
+"NAME": "ПЗВО \"АКАДЕМІЯ ДОБРОБУТ\"",
+"PARENT_ID": "",
+"ORGANIZATION_ID": "e92dd1ba-f8ea-11eb-bc00-005056960e2b",
+"HEADER": ""
+}
+]
+}
