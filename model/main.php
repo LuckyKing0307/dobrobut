@@ -20,5 +20,6 @@ $data['per_type'] = $API->evaluate('getPersonalTypesList','');
 $data['per_dir'] = $API->evaluate('getPersonalDirectionsList','');
 $data['users'] = $users['list'];
 $data['count'] = $users['count'];
+$data['count_list'] = $users['count_list'];
 $result = require('../view/main.php');
 return $data;

@@ -90,7 +90,7 @@
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="title"><p class="title tableTitle">Організаційна структура ММ “Добробут”</p></div>
-				<p class="tableText">Співробітників: <span id="tableNumber"><?=$data['count']?></span></p>
+				<p class="tableText">Співробітників: <span id="tableNumber"><?=$data['count_list']?></span></p>
 			</div>
 			<div class="paging col-lg-6">
 					<div class=" d-flex justify-content-end">

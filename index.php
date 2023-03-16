@@ -21,8 +21,10 @@ $data['tmp'] = 'main';
 		$data['org'] = $API->evaluate('getOrganizationList','');
 		$data['per_type'] = $API->evaluate('getPersonalTypesList','');
 		$data['per_dir'] = $API->evaluate('getPersonalDirectionsList','');
-		$data['users'] = $API->evaluate('getUsersList','')['list'];
-		$data['count'] = $API->evaluate('getUsersList','')['count'];
+		$users = $API->evaluate('getUsersList','');
+		$data['users'] = $users['list'];
+		$data['count'] = $users['count'];
+		$data['count_list'] = $users['count_list'];
 		$result = require('view/main.php');
 	?>
 	</body>

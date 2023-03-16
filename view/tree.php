@@ -30,6 +30,9 @@
 	</div>
 	<div class="searchBox">
 		<div class="row tree">
+			<div class="col-lg-12">
+				<div class="infoText clickable" onclick="searchPage(this)" data-loadpage="search" data-palcement="search">Як користуватися пошуком?</div>
+			</div>
 			<ul class="col-lg-12 d-flex flex-nowrap justify-content-center">
 				<li class="main_roots">
 					<div class="three_block three_block_main">
@@ -43,7 +46,7 @@
 							<div class="three_block">
 								<div class="three_block_title" onclick="types('organization_id')">Організаційна структура</div>
 								<div class="three_block_text">
-									<p>Керівник: Кривий Г. О,</p>
+									<!-- <p>Керівник: Кривий Г. О,</p> -->
 									<p>Підрозділи: <?=count($data['org'])?></p>
 								</div>
 								<div class="three_btn desc_three">
@@ -56,12 +59,12 @@
 							<div class="three_block">
 								<div class="three_block_title" onclick="types('direction')">Функціональна структура</div>
 								<div class="three_block_text">
-									<p>Керівник: Кривий Г. О,</p>
-									<p>Підрозділи: <?=count($data['per_dir'])?></p>
+									<!-- <p>Керівник: Кривий Г. О,</p> -->
+									<p>Функції: <?=count($data['per_dir'])?></p>
 								</div>
 								<div class="three_btn desc_three">
 									<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="direction" data-svalue="">Всі співробітники</div>
-									<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Підрозділи</div>
+									<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Функції</div>
 								</div>
 							</div>
 						</li>
@@ -69,12 +72,12 @@
 							<div class="three_block">
 								<div class="three_block_title" onclick="types('position_type')">За типами співробітників</div>
 									<div class="three_block_text">
-									<p>Керівник: Кривий Г. О,</p>
-									<p>Підрозділи: <?=count($data['per_type'])?></p>
+									<!-- <p>Керівник: Кривий Г. О,</p> -->
+									<p>Типи: <?=count($data['per_type'])?></p>
 								</div>
 								<div class="three_btn desc_three">
 									<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="position_type" data-svalue="">Всі співробітники</div>
-									<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Підрозділи</div>
+									<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Типи</div>
 								</div>
 							</div>
 						</li>
@@ -92,8 +95,8 @@
 			</div>
 			<div class="mobile_block_title">Організаційна структура</div>
 			<div class="content">
-				<p class="mobile_text">Керівник: Кривий Г. О,</p>
-				<p class="mobile_text">Співробітників: <?=count($data['org'])?></p>
+				<!-- <p class="mobile_text">Керівник: Кривий Г. О,</p> -->
+				<p class="mobile_text">Підрозділи: <?=count($data['org'])?></p>
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="organization_id" data-svalue="">Всі співробітники</div>
@@ -108,12 +111,12 @@
 			</div>
 			<div class="mobile_block_title">Функціональна структура</div>
 			<div class="content">
-				<p class="mobile_text">Керівник: Кривий Г. О,</p>
-				<p class="mobile_text">Співробітників: <?=count($data['per_dir'])?></p>
+				<!-- <p class="mobile_text">Керівник: Кривий Г. О,</p> -->
+				<p class="mobile_text">Функції: <?=count($data['per_dir'])?></p>
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="direction" data-svalue="">Всі співробітники</div>
-				<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Підрозділи</div>
+				<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Функції</div>
 			</div>
 		</div>
 	</div><div class="block_mobile" id="position_type">
@@ -124,12 +127,12 @@
 			</div>
 			<div class="mobile_block_title">За типами співробітників</div>
 			<div class="content">
-				<p class="mobile_text">Керівник: Кривий Г. О,</p>
-				<p class="mobile_text">Співробітників: <?=count($data['per_type'])?></p>
+				<!-- <p class="mobile_text">Керівник: Кривий Г. О,</p> -->
+				<p class="mobile_text">Типи: <?=count($data['per_type'])?></p>
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="position_type" data-svalue="">Всі співробітники</div>
-				<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Підрозділи</div>
+				<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Типи</div>
 			</div>
 		</div>
 	</div>

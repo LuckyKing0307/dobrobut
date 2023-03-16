@@ -13,9 +13,22 @@
 	<div class="selectType">
 		<div class="row">
 			<?php if (isset($_GET['pod'])): ?>
-				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-svalue="pod"  data-sttype="<?=$_GET['pod']?>">
+				<?php if ($_GET['pod']=='department_id'): ?>
+					<?php if ($back[$ident][1]=='id'): ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-podid="<?=$back[$ident][0]?>">
+					<?php endif ?>
+					<?php if ($back[$ident][1]=='parentid'): ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-parenttype="<?=$back[$ident][0]?>" data-podid="<?=$back[$ident][0]?>">
+					<?php endif ?>
+					<?php if ($back[$ident][1]==''): ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod">
+					<?php endif ?>
+					<!-- <div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-podid="<?=$_GET['id']?>"> -->
+				<?php else: ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="pod(this)" data-sttype="<?=$_GET['structure']?>" data-svalue="pod">
+				<?php endif ?>
 			<?php else: ?>
-				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="<?=$back?>" data-loadpage="main">
+				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="<?=$backs?>" data-loadpage="main">
 			<?php endif ?>
 				<div class="leftArrow">
 					<img src="https://dobrobut.learn-solve.com/front/img/leftArrow.svg" alt="">
@@ -38,6 +51,12 @@
 					<?php endif ?>
 					<input type="hidden" id="type_search" value="<?=$type['search']?>">
 					<input type="hidden" id="type_value" value="<?=$type['value']?>">
+					<?php if (isset($back)): ?>
+						<input type="hidden" id="back_link" value='<?=json_encode($back)?>'>
+					<?php endif ?>
+					<?php if ($_GET['pod']): ?>
+						<input type="hidden" id="pod_link" value='<?=$_GET['pod']?>'>
+					<?php endif ?>
 					<div class="buttonSearch" onclick="search(this)">Search</div>
 				</div>
 			</div>
@@ -51,7 +70,7 @@
 					<?php else: ?>
 						<div class="title"><p class="title tableTitle"><?=$title?></p></div>
 					<?php endif ?>
-				<p class="tableText">Співробітників: <span id="tableNumber"><?=$data['count']?></span></p>
+				<p class="tableText">Співробітників: <span id="tableNumber"><?=$data['count_list']?></span></p>
 			</div>
 			<div class="paging col-lg-6">
 					<div class=" d-flex justify-content-end">

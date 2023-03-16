@@ -1,7 +1,11 @@
 <div class="container">
 <div class="selectType">
 	<div class="row">
+		<?php if (isset($_GET['place'])): ?>
+		<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="tree('tree')" data-loadpage="main">
+		<?php else: ?>
 		<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="loadwebpage(this)" data-loadpage="main">
+		<?php endif ?>
 			<div class="leftArrow">
 				<img src="front/img/leftArrow.svg" alt="">
 			</div>

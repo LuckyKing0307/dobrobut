@@ -752,6 +752,9 @@ input[type="search"]:focus {
 	.resultTable>tbody>tr>td{
 		font-size: 12px;
 	}
+	.resultTable>tbody>tr>td>a{
+		font-size: 12px;
+	}
 	.tableRes{
 		display: none;
 	}
@@ -799,6 +802,9 @@ input[type="search"]:focus {
 	}
 	.three_block_text{
 		display: none;
+	}
+	.pod_text_block{
+		display: block;
 	}
 	.desc_three{
 		display: none;
