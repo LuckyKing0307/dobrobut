@@ -61,7 +61,12 @@ class Api implements Evaluator
             return self::getUsersByTyped($arguments);
         } else if ($method === 'getPods') {
             return self::getPods($arguments);
+        } else if ($method === 'getOrgtyped') {
+            return self::getOrgtyped($arguments);
+        } else if ($method === 'getDepList') {
+            return self::getDepList($arguments);
         }
+
 
 
         throw new MethodException();
@@ -403,7 +408,9 @@ class Api implements Evaluator
             $limit = " limit 9 offset ".$offset;
         }
         $result = [];
-        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where users.active=true ORDER by users.last_name".$limit);
+        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (),user_positions.post_type, users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where users.active=true and user_positions.post_type='M' ORDER by users.last_name".$limit);
+        $res_count = @pg_query($this->pg,"SELECT count(*)   FROM user_positions where post_type='M'");
+        $count_list = @pg_fetch_array($res_count)['count'];
         $count = 0;
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
@@ -433,6 +440,7 @@ class Api implements Evaluator
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
          $result['count'] = $count;
+         $result['count_list'] = $count_list;
          return $result;
     }
 
@@ -449,48 +457,99 @@ class Api implements Evaluator
             $limit = " limit 9 offset ".$offset;
         }
         $where = '';
-        $where_text = '';
-        if (isset($argument['fields'])) {
+        $where_text = "";
+
+        
+        if (isset($argument['list'])) {
+            $type=$argument['type'];
+            $where = "and (user_positions.".$type."='asd'";
+
+            foreach ($argument['list'] as $value) {
+               $where =$where. " or user_positions.".$type."='".$value['id']."'";
+            }
+
+            $where1=$where.")";
+
+            $where = str_replace("user_positions.".$type."='asd' or ", ' ', $where1);
+        }
+        if (isset($argument['fields']) and $argument['type']!='department_id') {
             foreach ($argument['fields'] as $field => $value) {
                $where = " and user_positions.".$field."='".$value."'";
-            }
+        }
         }if (isset($argument['text'])) {
             $arg_text = mb_strtolower($argument['text']);
             $where_text = "(LOWER(users.name) LIKE '%".$arg_text."%' OR LOWER(users.last_name) LIKE '%".$arg_text."%' OR LOWER(users.phone) LIKE '%".$arg_text."%' OR LOWER(users.email) LIKE '%".$arg_text."%' OR LOWER(users.second_name) LIKE '%".$arg_text."%' OR LOWER(departments.name) LIKE '%".$arg_text."%' OR LOWER(personal_types.name) LIKE '%".$arg_text."%' OR LOWER(positions.name) LIKE '%".$arg_text."%' OR LOWER(organizations.name) LIKE '%".$arg_text."%') and";
         }
         $result = [];
-        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true ".$where." ORDER by users.last_name".$limit);
-        $count = 0;
+        $res = @pg_query($this->pg,"select * from(select DISTINCT ON (users.id) COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, user_positions.post_type as corppo_type, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true ".$where.") sub ORDER by last_name".$limit);
+
+        $count_req = @pg_query($this->pg,"select COUNT(users.id) from users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true ".$where." and user_positions.post_type='M'");
+        if ($argument['type']=='organization_id') {
+            $count = $this->countWorkser($argument['fields'][$argument['type']],'organization_id');
+        }
+        else if ($argument['type']=='department_id') {
+            $count = $this->countWorkser($argument['fields'][$argument['type']]);
+        }else{
+            $count = @pg_fetch_array($count_req)['count'];
+        }
+
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
-                if ($row['der_name']!='') {
-                    $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$row['der_name']."'");
-                    $dir = @pg_fetch_array($dirs);
-                    $row['der_name'] = $dir['name'];
+                if ($row['corppo_type']=='M') {
+                    if ($row['der_name']!='') {
+                        $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$row['der_name']."'");
+                        $dir = @pg_fetch_array($dirs);
+                        $row['der_name'] = $dir['name'];
+                    }
+                    $restl = [
+                        'id' => $row['id'],
+                        'name' => $row['name'],
+                        'last_name' => $row['last_name'],
+                        'second_name' => $row['second_name'],
+                        'birthday' => $row['birthday'],
+                        'phone' => $row['phone'],
+                        'email' => $row['email'],
+                        'birthday' => $row['birthday'],
+                        'pos_name' => $row['pos_name'],
+                        'dep_name' => $row['dep_name'],
+                        'der_name' => $row['der_name'],
+                        'post_name' => $row['post_name'],
+                        'org_name' => $row['org_name']
+                    ];
+                    $result['list'][] = $restl;
+                }else{
+                    $ressts = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, user_positions.post_type as corppo_type, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where user_positions.post_type='M' and users.id='".$row['id']."'");
+                    $rowSuser = @pg_fetch_array($ressts);
+                    if ($rowSuser['der_name']!='') {
+                        $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$rowSuser['der_name']."'");
+                        $dir = @pg_fetch_array($dirs);
+                        $rowSuser['der_name'] = $dir['name'];
+                    }
+                    $rest1 = [
+                        'id' => $rowSuser['id'],
+                        'name' => $rowSuser['name'],
+                        'last_name' => $rowSuser['last_name'],
+                        'second_name' => $rowSuser['second_name'],
+                        'birthday' => $rowSuser['birthday'],
+                        'phone' => $rowSuser['phone'],
+                        'email' => $rowSuser['email'],
+                        'birthday' => $rowSuser['birthday'],
+                        'pos_name' => $rowSuser['pos_name'],
+                        'dep_name' => $rowSuser['dep_name'],
+                        'der_name' => $rowSuser['der_name'],
+                        'post_name' => $rowSuser['post_name'],
+                        'org_name' => $rowSuser['org_name']
+                    ];
+                    $result['list'][] = $rest1;
                 }
-                $count = $row['count'];
-                $restl = [
-                    'id' => $row['id'],
-                    'name' => $row['name'],
-                    'last_name' => $row['last_name'],
-                    'second_name' => $row['second_name'],
-                    'birthday' => $row['birthday'],
-                    'phone' => $row['phone'],
-                    'email' => $row['email'],
-                    'birthday' => $row['birthday'],
-                    'pos_name' => $row['pos_name'],
-                    'dep_name' => $row['dep_name'],
-                    'der_name' => $row['der_name'],
-                    'post_name' => $row['post_name'],
-                    'org_name' => $row['org_name']
-                ];
-                $result['list'][] = $restl;
             }
         } else {
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
-         $result['count'] = $count;
-         return $result;
+        $result['sql'] = "select COUNT(users.id) from users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true and user_positions.post_type='M' ".$where;
+        $result['count'] = $count;
+        $result['count_list'] = $count;
+        return $result;
     }
 
 
@@ -512,36 +571,63 @@ class Api implements Evaluator
             $where_text = "(LOWER(users.name) LIKE '%".$arg_text."%' OR LOWER(users.last_name) LIKE '%".$arg_text."%' OR LOWER(users.phone) LIKE '%".$arg_text."%' OR LOWER(users.email) LIKE '%".$arg_text."%' OR LOWER(users.second_name) LIKE '%".$arg_text."%' OR LOWER(departments.name) LIKE '%".$arg_text."%' OR LOWER(personal_types.name) LIKE '%".$arg_text."%' OR LOWER(positions.name) LIKE '%".$arg_text."%' OR LOWER(organizations.name) LIKE '%".$arg_text."%') and";
         }
         $result = [];
-        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true ".$where." ORDER by users.last_name".$limit);
-        $count = 0;
+        $res = @pg_query($this->pg,"select * from(select DISTINCT ON (users.id) COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, user_positions.post_type as corppo_type, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true ".$where.") sub ORDER by last_name".$limit);
+        $count_req = @pg_query($this->pg,"select COUNT(users.id) from users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true and user_positions.post_type='M' ".$where);
+        $count = @pg_fetch_array($count_req)['count'];
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
-                if ($row['der_name']!='') {
-                    $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$row['der_name']."'");
-                    $dir = @pg_fetch_array($dirs);
-                    $row['der_name'] = $dir['name'];
+                if ($row['corppo_type']=='M') {
+                    if ($row['der_name']!='') {
+                        $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$row['der_name']."'");
+                        $dir = @pg_fetch_array($dirs);
+                        $row['der_name'] = $dir['name'];
+                    }
+                    $restl = [
+                        'id' => $row['id'],
+                        'name' => $row['name'],
+                        'last_name' => $row['last_name'],
+                        'second_name' => $row['second_name'],
+                        'birthday' => $row['birthday'],
+                        'phone' => $row['phone'],
+                        'email' => $row['email'],
+                        'birthday' => $row['birthday'],
+                        'pos_name' => $row['pos_name'],
+                        'dep_name' => $row['dep_name'],
+                        'der_name' => $row['der_name'],
+                        'post_name' => $row['post_name'],
+                        'org_name' => $row['org_name']
+                    ];
+                    $result['list'][] = $restl;
+                }else{
+                    $ressts = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, user_positions.post_type as corppo_type, personal_types.name as pos_name, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where user_positions.post_type='M' and users.id='".$row['id']."'");
+                    $rowSuser = @pg_fetch_array($ressts);
+                    if ($rowSuser['der_name']!='') {
+                        $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$rowSuser['der_name']."'");
+                        $dir = @pg_fetch_array($dirs);
+                        $rowSuser['der_name'] = $dir['name'];
+                    }
+                    $rest1 = [
+                        'id' => $rowSuser['id'],
+                        'name' => $rowSuser['name'],
+                        'last_name' => $rowSuser['last_name'],
+                        'second_name' => $rowSuser['second_name'],
+                        'birthday' => $rowSuser['birthday'],
+                        'phone' => $rowSuser['phone'],
+                        'email' => $rowSuser['email'],
+                        'birthday' => $rowSuser['birthday'],
+                        'pos_name' => $rowSuser['pos_name'],
+                        'dep_name' => $rowSuser['dep_name'],
+                        'der_name' => $rowSuser['der_name'],
+                        'post_name' => $rowSuser['post_name'],
+                        'org_name' => $rowSuser['org_name']
+                    ];
+                    $result['list'][] = $rest1;
                 }
-                $count = $row['count'];
-                $restl = [
-                    'id' => $row['id'],
-                    'name' => $row['name'],
-                    'last_name' => $row['last_name'],
-                    'second_name' => $row['second_name'],
-                    'birthday' => $row['birthday'],
-                    'phone' => $row['phone'],
-                    'email' => $row['email'],
-                    'birthday' => $row['birthday'],
-                    'pos_name' => $row['pos_name'],
-                    'dep_name' => $row['dep_name'],
-                    'der_name' => $row['der_name'],
-                    'post_name' => $row['post_name'],
-                    'org_name' => $row['org_name']
-                ];
-                $result['list'][] = $restl;
             }
         } else {
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
+         $result['count_list'] = $count;
          $result['count'] = $count;
          return $result;
     }
@@ -552,9 +638,13 @@ class Api implements Evaluator
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
                 if ($row['der_name']!='') {
-                    $dirs = @pg_query($this->pg,"select name from personal_directions where id='".$row['der_name']."'");
+                    $dirs = @pg_query($this->pg,"select name,header from personal_directions where id='".$row['der_name']."'");
                     $dir = @pg_fetch_array($dirs);
                     $row['der_name'] = $dir['name'];
+                    if ($dir['header']!='') {
+                        $dirs = @pg_query($this->pg,"select id,name,last_name,second_name from users where id='".$dir['header']."'");
+                        $row['der_header'] = @pg_fetch_array($dirs);
+                    }
                 }
                 if ($row['header_id']!='') {
                     $dirs = @pg_query($this->pg,"select name,header,parent_id from departments where id='".$row['header_id']."'");
@@ -589,6 +679,7 @@ class Api implements Evaluator
                     'pos_name' => $row['pos_name'],
                     'dep_name' => $row['dep_name'],
                     'der_name' => $row['der_name'],
+                    'der_header' => $row['der_header'],
                     'post_name' => $row['post_name'],
                     'corppo_type' => $row['corppo_type'],
                     'header' => $row['header'],
@@ -623,14 +714,17 @@ class Api implements Evaluator
             $offset = intval($argument['paging'])*9;
             $limit = " limit 9 offset ".$offset;
         }
-        $where_text = '';
+        $where_text = " user_positions.post_type='M' and";
         if (isset($argument['text'])) {
+            $where_text='';
             $arg_text = mb_strtolower($argument['text']);
             $where_text = "(LOWER(users.name) LIKE '%".$arg_text."%' OR LOWER(users.last_name) LIKE '%".$arg_text."%' OR LOWER(users.phone) LIKE '%".$arg_text."%' OR LOWER(users.email) LIKE '%".$arg_text."%' OR LOWER(users.second_name) LIKE '%".$arg_text."%' OR LOWER(departments.name) LIKE '%".$arg_text."%' OR LOWER(personal_types.name) LIKE '%".$arg_text."%' OR LOWER(positions.name) LIKE '%".$arg_text."%' OR LOWER(organizations.name) LIKE '%".$arg_text."%') and";
         }
 
 
-        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name,positions.name as post_name, personal_types.name as pos_name, user_positions.post_type as corppo_type, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true and ".$where." ORDER by users.last_name".$limit);
+        $res = @pg_query($this->pg,"select COUNT(users.id) OVER (), users.id,users.active,users.name,last_name,second_name,birthday, departments.name as dep_name, departments.id as dep_id,positions.name as post_name, personal_types.name as pos_name, user_positions.post_type as corppo_type, user_positions.direction as der_name, organizations.name as org_name,phone,email FROM users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true and ".$where." ORDER by users.last_name".$limit);
+        $res_count = @pg_query($this->pg,"SELECT count(*) FROM user_positions where post_type='M'");
+        $count_list = @pg_fetch_array($res_count)['count'];
         $count = 0;
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
@@ -661,19 +755,27 @@ class Api implements Evaluator
         } else {
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
+        $result['sql'] = "SELECT count(*) FROM user_positions where post_type='M'";
+        $result['count_list'] = $count_list;
         $result['count'] = $count;
         return $result;
     }
     function getPods($argument){
         $type = $argument['type'];
-        $res = @pg_query($this->pg,"SELECT ".$type.", COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true GROUP BY ".$type."");
-
+        $res = @pg_query($this->pg,"SELECT ".$type.", COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true and user_positions.post_type='M' GROUP BY ".$type."");
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
                 $count = $row['count'];
                 $restl = [
                     'count' => $row['count'],
                 ];
+                if ($type =='organization_id') {
+                    $header = @pg_query($this->pg,"SELECT * FROM public.departments where organization_id='".$row[$type]."' and parent_id is null order by sort");
+                    $header_id = @pg_fetch_array($header);
+                    $user_header = @pg_query($this->pg,"SELECT * FROM public.users where id='".$header_id['header']."'");
+                    $restl['header'] = @pg_fetch_array($user_header);
+                    $restl['count'] = $this->countWorkser($row['organization_id'],'organization_id');
+                }
                 $result['list'][$row[$type]] = $restl;
             }
         } else {
@@ -681,6 +783,144 @@ class Api implements Evaluator
         }
     return $result;
     }
+    function getOrgtyped($argument){
+        if (isset($argument['id'])) {
+            $id = $argument['id'];
+        }
+        $where_text = ' and parent_id is null';
+        $parent_type = 'organization_id';
+        $subtypes = 'organizations';
+        if (isset($argument['parentid'])) {
+            $subtypes = 'departments';
+            $where_text = '';
+            $parent_type = 'parent_id';
+            $id = $argument['parentid'];
+        }
+        $res = @pg_query($this->pg,"SELECT COUNT(departments.id) OVER (), * FROM departments where ".$parent_type."='".$id."'".$where_text." order by sort");
+        $result = array();
+        if (@pg_num_rows($res)==0) {
+            $where_text = '';
+            $res = @pg_query($this->pg,"SELECT  * FROM departments where ".$parent_type."='".$id."'".$where_text."");
+            if ($res !== false) {
+                while ($row = @pg_fetch_array($res)) {
+                    $test_req = @pg_query($this->pg,"SELECT * FROM departments where parent_id='".$row['id']."'");
+                    $header = @pg_query($this->pg,"SELECT id,last_name,second_name,name FROM users where id='".$row['header']."'");
+                    $header_arr = @pg_fetch_array($header);
+                    $count = $this->countWorkser($row['id']);
+                    $type = 'child';
+                    if (@pg_num_rows($test_req)!=0) {
+                        $type = 'parent';
+                    }
+                    $reslt= [
+                        'count' => $count,
+                        'id' => $row['id'],
+                        'name' => $row['name'],
+                        'type' => $type
+                    ];
+                    if (isset($header_arr['id'])) {
+                        $reslt['header_id'] = $header_arr['id'];
+                        $reslt['header_name'] = $header_arr['last_name'].' '. mb_substr($header_arr['name'], 0, 1).'.'.mb_substr($header_arr['second_name'], 0, 1);
+                    }
+                    $result['list'][] = $reslt;
+                }
+            } else {
+                throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
+            }
+        }else{
+            if ($res !== false) {
+                while ($row = @pg_fetch_array($res)) {
+                    $test_req = @pg_query($this->pg,"SELECT * FROM departments where parent_id='".$row['id']."'");
+                    $header = @pg_query($this->pg,"SELECT id,last_name,second_name,name FROM users where id='".$row['header']."'");
+                    $header_arr = @pg_fetch_array($header);
+                    $count = $this->countWorkser($row['id']);
+                    $type = 'child';
+                    if (@pg_num_rows($test_req)!=0) {
+                        $type = 'parent';
+                    }
+                    $reslt= [
+                        'count' => $count,
+                        'id' => $row['id'],
+                        'name' => $row['name'],
+                        'type' => $type
+                    ];
+                    if (isset($header_arr['id'])) {
+                        $reslt['header_id'] = $header_arr['id'];
+                        $reslt['header_name'] = $header_arr['last_name'].' '. mb_substr($header_arr['name'], 0, 1).'.'.mb_substr($header_arr['second_name'], 0, 1);
+                    }
+                    $result['list'][] = $reslt;
+                }
+            } else {
+                throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
+            }
 
+        }
+        $subtitlereq = @pg_query($this->pg,"SELECT * FROM ".$subtypes." where id='".$id."'");
+        $subtitle = @pg_fetch_array($subtitlereq)['name'];
+        $result['title'] = $subtitle;
+    return $result;
+    }
+    function countWorkser($job,$type=null){
+        $id = $job;
+        $searcher = 'parent_id';
+        $null = '';
+        if ($type=='organization_id') {
+            $searcher=$type;
+            $null=' and parent_id is null';
+        }
+        $res = @pg_query($this->pg,"SELECT  * FROM departments where ".$searcher."='".$id."'".$null);
+        $count = 0;
+        if ($res !== false) {
+            if (@pg_num_rows($res)!=0) {
+                while ($row = @pg_fetch_array($res)) {
+                    $jobs = @pg_query($this->pg,"SELECT * FROM departments where parent_id ='".$row['id']."'");
+                    if (@pg_num_rows($jobs)!=0) {
+                        $count = $count+$this->countWorkser($row['id']);
+                    }else{
+                        $counts_users = @pg_query($this->pg,"SELECT COUNT(*) FROM user_positions where department_id='".$row['id']."' ");
+                        $count = $count+@pg_fetch_array($counts_users)['count'];
+                    }
+                }
+            }else{
+                if ($type=='organization_id') {
+                    $res = @pg_query($this->pg,"SELECT  * FROM departments where ".$searcher."='".$id."'");
+                    while ($row = @pg_fetch_array($res)) {
+                        $jobs = @pg_query($this->pg,"SELECT * FROM departments where parent_id ='".$row['id']."'");
+                        if (@pg_num_rows($jobs)!=0) {
+                            $count = $count+$this->countWorkser($row['id']);
+                        }else{
+                            $counts_users = @pg_query($this->pg,"SELECT COUNT(*) FROM user_positions where department_id='".$row['id']."' ");
+                            $count = $count+@pg_fetch_array($counts_users)['count'];
+                        }
+                    }
+                }else{
+                    $counts_users = @pg_query($this->pg,"SELECT COUNT(*) FROM user_positions where department_id='".$id."' ");
+                    $count = @pg_fetch_array($counts_users)['count'];
+                }
+            }
+        }
+    return $count;
+    }
+    function getDepList($job){
+
+        $id = $job;
+        $res = @pg_query($this->pg,"SELECT  * FROM departments where parent_id ='".$id."'");
+        $count = 0;
+        $array_dep = array();
+        if ($res !== false) {
+            if (@pg_num_rows($res)!=0) {
+                while ($row = @pg_fetch_array($res)) {
+                    $jobs = @pg_query($this->pg,"SELECT  * FROM departments where parent_id ='".$row['id']."'");
+                    if (@pg_num_rows($jobs)!=0) {
+                        $array_dep = array_merge($array_dep,$this->getDepList($row['id']));
+                    }else{
+                        $array_dep[]['id'] = $row['id'];
+                    }
+                }
+            }else{
+               $array_dep[]['id'] = $id;
+            }
+        }
+        return $array_dep;
+    }
 }
 
