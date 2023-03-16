@@ -1,4 +1,6 @@
 linked = new Array();
+user_linked = new Array();
+user_linked[0]='';
 $('body').click(function( e ) {
 	if ($(e.target).data('seltype')) {
 		openSelect(e.target)
@@ -7,6 +9,12 @@ $('body').click(function( e ) {
 	}
 })
 function loadwebpage(e){
+	if ($(e).data('userback')) {
+		user_linked.splice($(e).data('userback'), 1);
+		console.log($(e).data('userback'));
+	}
+
+
 	if ($(e).data('sttype')) {
 		if ($(e).data('pod')) {
 			if ($(e).data('podid')) {
@@ -138,42 +146,62 @@ function searchPage(e){
 }
 function getUser(e){
 	if ($(e).data('parentid')) {
-		if ($("#type_value").val()!='') {
-
-			// if (linked[linked.length-1][0]!=$(e).data('podid')) {
-			// 	link_datas[0] = $(e).data('podid');
-			// 	link_datas[1] = 'parentid';
-			// 	linked[linked.length] = link_datas;
-			// }
-			console.log('asdasd');
-			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&parentid="+$(e).data('parentid')+"&type_value="+$("#type_value").val()+"&type_search="+$("#type_search").val()+"&back="+JSON.stringify(linked), function( data ) {
-			  $( "body" ).html(data);
-			});
+		if ($("#type_value").val()!=undefined && $("#type_value").val()!='') {
+			if ($(e).data('back')) {
+					user_linked.splice($(e).data('back'), 1);
+			}else{
+				if (user_linked[user_linked.length-1]!=$(e).data('userid')) {
+					user_linked[user_linked.length] = $(e).data('userid');
+				}
+			}
+			if ($("#back_link").val()!=undefined && $("#back_link").val()!='') {
+				$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&parentid="+$(e).data('parentid')+"&type_value="+$("#type_value").val()+"&type_search="+$("#type_search").val()+"&back="+JSON.stringify(linked)+"&user_linked="+JSON.stringify(user_linked), function( data ) {
+				  $( "body" ).html(data);
+				});	
+			}else{
+				$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&parentid="+$(e).data('parentid')+"&type_value="+$("#type_value").val()+"&type_search="+$("#type_search").val()+"&user_linked="+JSON.stringify(user_linked), function( data ) {
+				  $( "body" ).html(data);
+				});	
+			}
 		}else{
-			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&parentid="+$(e).data('parentid'), function( data ) {
+			if ($(e).data('back')) {
+					user_linked.splice($(e).data('back'), 1);
+			}else{
+				if (user_linked[user_linked.length-1]!=$(e).data('userid')) {
+					user_linked[user_linked.length] = $(e).data('userid');
+				}
+			}
+			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&parentid="+$(e).data('parentid')+"&user_linked="+JSON.stringify(user_linked), function( data ) {
 			  $( "body" ).html(data);
 			});
 		}
 	}else{
-		if ($("#type_value").val()!='') {
-
-			// if (linked[linked.length-1][0]!=$(e).data('podid')) {
-			// 	link_datas[0] = $(e).data('podid');
-			// 	link_datas[1] = 'parentid';
-			// 	linked[linked.length] = link_datas;
-			// }
-			console.log('asdasd');
-			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&type_value="+$("#type_value").val()+"&type_search="+$("#type_search").val()+"&back="+JSON.stringify(linked), function( data ) {
+		if ($("#type_value").val()!=undefined && $("#type_value").val()!='') {
+			if ($(e).data('back')) {
+					user_linked.splice($(e).data('back'), 1);
+			}else{
+				if (user_linked[user_linked.length-1]!=$(e).data('userid')) {
+					user_linked[user_linked.length] = $(e).data('userid');
+				}
+			}
+			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&type_value="+$("#type_value").val()+"&type_search="+$("#type_search").val()+"&back="+JSON.stringify(linked)+"&user_linked="+JSON.stringify(user_linked), function( data ) {
 			  $( "body" ).html(data);
 			});
 
 		}else{
-			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"", function( data ) {
+			if ($(e).data('back')) {
+					user_linked.splice($(e).data('back'), 1);
+			}else{
+				if (user_linked[user_linked.length-1]!=$(e).data('userid')) {
+					user_linked[user_linked.length] = $(e).data('userid');
+				}
+			}
+			$.get( location.href+"model/user.php?id="+$(e).data('userid')+"&user_linked="+JSON.stringify(user_linked), function( data ) {
 			  $( "body" ).html(data);
 			});
 		}
 	}
-
+	console.log(user_linked);
 }
 function pagingDep(e){
 	let search_text = location.href+"model/structure.php?paging="+$(e).data('paging');

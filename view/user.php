@@ -1,8 +1,13 @@
 <div class="container">
 	<div class="selectType">
-		<?php if (isset($_GET['parentid'])): ?>
+		<?php if ($user_linked[$ident-1]!=''): ?>
 			<div class="row">
-				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="getUser(this)" data-userid="<?=$_GET['parentid']?>">
+				<?php if (isset($_GET['back']) and $_GET['back']!='[]'): ?>
+					<input type="hidden" id="back_link" value='<?=json_encode($back)?>'>
+				<?php endif ?>
+				<input type="hidden" id="type_search" value="<?=$type_search?>">
+				<input type="hidden" id="type_value" value="<?=$type_value?>">
+				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="getUser(this)" data-userid="<?=$user_linked[$ident-1]?>" data-back="<?=$ident?>">
 					<div class="leftArrow">
 						<img src="front/img/leftArrow.svg" alt="">
 					</div>
@@ -11,7 +16,20 @@
 			</div>
 		<?php else: ?>
 			<div class="row">
-				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="loadwebpage(this)" data-loadpage="main">
+				<?php if (isset($type_value) and $type_value!=''): ?>
+					<?php if (isset($_GET['back']) and $_GET['back']!='[]'): ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="loadwebpage(this)" data-sttype="<?=$type_search?>" data-subpod="<?=$type_value?>" data-svalue="<?=$type_value?>" data-pod="1" data-userback="<?=$ident?>">
+						<input type="hidden" id="back_link" value='<?=json_encode($back)?>'>
+						<input type="hidden" id="type_search" value="<?=$type_search?>">
+						<input type="hidden" id="type_value" value="<?=$type_value?>">
+					<?php else: ?>
+						<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="loadwebpage(this)" data-sttype="<?=$type_search?>" data-svalue="<?=$type_value?>" data-userback="<?=$ident?>">
+						<input type="hidden" id="type_search" value="<?=$type_search?>">
+						<input type="hidden" id="type_value" value="<?=$type_value?>">
+					<?php endif ?>
+				<?php else: ?>	
+				<div class="col-lg-2 d-flex align-items-center flex-wrap" onclick="loadwebpage(this)" data-loadpage="main" data-userback="<?=$ident?>">
+				<?php endif ?>
 					<div class="leftArrow">
 						<img src="front/img/leftArrow.svg" alt="">
 					</div>
@@ -172,7 +190,7 @@
 					<div class="detail d-flex">
 						<p class="detailTitle">Керівник</p>
 						<?php if (is_array($data[$main]['header'])): ?>
-						<p class="userLink clickable detailText" style="font-size: 12px;"  onclick="getUser(this)" data-userid="<?=$data[$main]['header']['id']?>"  data-parentid="<?=$data[$main]['id']?>"><?=$data[$main]['header']['last_name']?> <?=$first_character_headername?>.<?=$first_character_headerlastname?>.</p>
+						<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$main]['header']['id']?>"  data-parentid="<?=$data[$main]['id']?>"><?=$data[$main]['header']['last_name']?> <?=$first_character_headername?>.<?=$first_character_headerlastname?>.</p>
 						<?php else: ?>
 						<p class="detailText">_</p>
 						<?php endif ?>
@@ -183,7 +201,11 @@
 					</div>
 					<div class="detail d-flex">
 						<p class="detailTitle lastdetailTitle">Лідер напрямку</p>
+						<?php if (is_array($data[$main]['header'])): ?>
+						<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$main]['der_header']['id']?>"  data-parentid="<?=$data[$main]['id']?>"><?=$data[$main]['der_header']['last_name']?> <?=$first_character_leadername?>.<?=$first_character_leaderlastname?>.</p>
+						<?php else: ?>
 						<p class="detailText">_</p>
+						<?php endif ?>
 					</div>
 				</div>
 			</div>
@@ -205,6 +227,26 @@
 								<div class="detail d-flex">
 									<p class="detailTitle lastdetailTitle">Посада <?=$work_count?></p>
 									<p class="detailText"><?=$data[$i]['post_name']?></p>
+								</div>
+								<div class="detail d-flex">
+									<p class="detailTitle lastdetailTitle">Керівник <?=$work_count?></p>
+									<?php if (is_array($data[$i]['header'])): ?>
+									<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$i]['header']['id']?>"  data-parentid="<?=$data[$i]['id']?>"><?=$data[$i]['header']['last_name']?> <?=mb_substr($data[$i]['header']['name'], 0, 1)?>.<?=mb_substr($data[$i]['header']['second_name'], 0, 1)?>.</p>
+									<?php else: ?>
+									<p class="detailText">_</p>
+									<?php endif ?>
+								</div>
+								<div class="detail d-flex">
+									<p class="detailTitle lastdetailTitle">Напрямок <?=$work_count?></p>
+									<p class="detailText"><?=$data[$i]['der_name']?></p>
+								</div>
+								<div class="detail d-flex">
+									<p class="detailTitle lastdetailTitle">Лідер напрямку <?=$work_count?></p>
+									<?php if (is_array($data[$i]['der_header'])): ?>
+									<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$i]['der_header']['id']?>"  data-parentid="<?=$data[$i]['id']?>"><?=$data[$i]['der_header']['last_name']?> <?=mb_substr($data[$i]['der_header']['name'], 0, 1)?>.<?=mb_substr($data[$i]['der_header']['second_name'], 0, 1)?>.</p>
+									<?php else: ?>
+									<p class="detailText">_</p>
+									<?php endif ?>
 								</div>
 							</div>
 						<?php  
