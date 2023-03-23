@@ -49,9 +49,10 @@
 									<!-- <p>Керівник: Кривий Г. О,</p> -->
 									<p>Підрозділи: <?=count($data['org'])?></p>
 								</div>
+								<div class="btn three_button three_button_blue vikrit" onclick="types('organization_id')" data-sttype="direction" data-svalue="">Відкрити</div>
 								<div class="three_btn desc_three">
 									<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="organization_id" data-svalue="">Всі співробітники</div>
-									<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod">Підрозділи</div>
+									<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod">Детальніше</div>
 								</div>
 							</div>
 						</li>
@@ -62,9 +63,10 @@
 									<!-- <p>Керівник: Кривий Г. О,</p> -->
 									<p>Функції: <?=count($data['per_dir'])?></p>
 								</div>
+								<div class="btn three_button three_button_blue vikrit" onclick="types('direction')" data-sttype="direction" data-svalue="">Відкрити</div>
 								<div class="three_btn desc_three">
 									<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="direction" data-svalue="">Всі співробітники</div>
-									<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Функції</div>
+									<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Детальніше</div>
 								</div>
 							</div>
 						</li>
@@ -75,9 +77,10 @@
 									<!-- <p>Керівник: Кривий Г. О,</p> -->
 									<p>Типи: <?=count($data['per_type'])?></p>
 								</div>
+								<div class="btn three_button three_button_blue vikrit" onclick="types('position_type')" data-sttype="direction" data-svalue="">Відкрити</div>
 								<div class="three_btn desc_three">
 									<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="position_type" data-svalue="">Всі співробітники</div>
-									<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Типи</div>
+									<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Детальніше</div>
 								</div>
 							</div>
 						</li>
@@ -100,7 +103,7 @@
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="organization_id" data-svalue="">Всі співробітники</div>
-				<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod">Підрозділи</div>
+				<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod">Детальніше</div>
 			</div>
 		</div>
 	</div><div class="block_mobile" id="direction">
@@ -116,7 +119,7 @@
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="direction" data-svalue="">Всі співробітники</div>
-				<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Функції</div>
+				<div class="btn three_button" onclick="pod(this)" data-sttype="direction" data-svalue="pod">Детальніше</div>
 			</div>
 		</div>
 	</div><div class="block_mobile" id="position_type">
@@ -132,7 +135,7 @@
 			</div>
 			<div class="three_btn">
 				<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="position_type" data-svalue="">Всі співробітники</div>
-				<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Типи</div>
+				<div class="btn three_button" onclick="pod(this)" data-sttype="position_type" data-svalue="pod">Детальніше</div>
 			</div>
 		</div>
 	</div>

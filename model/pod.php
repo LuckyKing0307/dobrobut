@@ -77,8 +77,8 @@ if (isset($_GET['back'])) {
 		}
 	}
 }
-echo "<pre>";
-print_r($data['list']);
-echo "</pre>";
+// echo "<pre>";
+// print_r($data['list']);
+// echo "</pre>";
 $result = require('../view/pod.php');
 

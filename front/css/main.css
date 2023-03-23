@@ -712,6 +712,9 @@ input[type="search"]:focus {
 .tableMobile{
 	display: none;
 }
+.vikrit{
+	display: none;
+}
 @media (min-width: 1400px){
 
 	.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -779,6 +782,11 @@ input[type="search"]:focus {
 	}
 	.tree li::before{
 		width: 200%;
+	}
+	.vikrit{
+		display: block;
+		margin-top: 0;
+		padding: 6px 0px;
 	}
 	.main_roots{
 		width: 100%;

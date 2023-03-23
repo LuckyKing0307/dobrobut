@@ -17,15 +17,17 @@ $data['tmp'] = 'main';
 		<link rel="stylesheet" href="front/css/main.css">
 	</head>
 	<body>
-	<?php
+	<?php 
+		$users = array();
+
 		$data['org'] = $API->evaluate('getOrganizationList','');
 		$data['per_type'] = $API->evaluate('getPersonalTypesList','');
 		$data['per_dir'] = $API->evaluate('getPersonalDirectionsList','');
-		$users = $API->evaluate('getUsersList','');
-		$data['users'] = $users['list'];
-		$data['count'] = $users['count'];
-		$data['count_list'] = $users['count_list'];
-		$result = require('view/main.php');
-	?>
+		$data['count'] = $API->evaluate('getUsersList',array())['count'];
+
+		$result = require('view/tree.php');?>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="https://dobrobut.learn-solve.com/front/js/main.js" defer=""></script>
 	</body>
 </html>

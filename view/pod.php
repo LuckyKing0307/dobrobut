@@ -57,19 +57,19 @@
 									<?php if (isset($_GET['id']) or isset($data['list'][$i]['type'])): ?>
 										<?php if (isset($data['list'][$i]['type']) and $data['list'][$i]['type']=='parent'): ?>
 											<?php if ($data['list'][$i]['count']!=0): ?>
-												<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1">Всі співробітники</div>
-												<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-parenttype="<?=$data['list'][$i]['id']?>" data-podid="<?=$data['list'][$i]['id']?>" >Підрозділи</div>
+												<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1" data-pod="1" data-titled="<?=$data['list'][$i]['name']?>">Всі співробітники</div>
+												<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-parenttype="<?=$data['list'][$i]['id']?>" data-podid="<?=$data['list'][$i]['id']?>" >Детальніше</div>
 											<?php else: ?>
-												<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-parenttype="<?=$data['list'][$i]['id']?>" data-podid="<?=$data['list'][$i]['id']?>" style="width: 100% !important;">Підрозділи</div>
+												<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-parenttype="<?=$data['list'][$i]['id']?>" data-podid="<?=$data['list'][$i]['id']?>" style="width: 100% !important;">Детальніше</div>
 											<?php endif ?>
 										<?php else: ?>
 											<?php if ($data['list'][$i]['count']!=0): ?>
-												<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1" data-ids="<?=$data['list'][$i]['id']?>" data-podid="<?=$back[$ident+1][0]?>" style="width: 100% !important;">Всі співробітники</div>
+												<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1" data-ids="<?=$data['list'][$i]['id']?>" data-podid="<?=$back[$ident+1][0]?>" style="width: 100% !important;" data-pod="1" data-titled="<?=$data['list'][$i]['name']?>">Всі співробітники</div>
 											<?php endif ?>
 										<?php endif ?>
 									<?php else: ?>
-										<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1">Всі співробітники</div>
-										<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-podid="<?=$data['list'][$i]['id']?>">Підрозділи</div>
+										<div class="btn three_button three_button_blue" onclick="loadwebpage(this)" data-sttype="<?=$_GET['pod']?>" data-subpod="<?=$data['list'][$i]['id']?>" data-svalue="<?=$data['list'][$i]['id']?>" data-pod="1" data-titled="<?=$data['list'][$i]['name']?>">Всі співробітники</div>
+										<div class="btn three_button" onclick="pod(this)" data-sttype="organization_id" data-svalue="pod" data-podid="<?=$data['list'][$i]['id']?>">Детальніше</div>
 									<?php endif ?>
 								</div>
 							</div>

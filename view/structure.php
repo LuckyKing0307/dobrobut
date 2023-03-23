@@ -45,9 +45,9 @@
 			<div class="col-lg-12">
 				<div class="searchForm d-flex align-items-center">
 					<?php if ($_GET['req']==''): ?>
-						<input type="search" class="inputSearch" id="searchInput" placeholder="Пошук (працює по <?=$title1?>)" value="<?=$search_req?>">
+						<input type="search" class="inputSearch" id="searchInput" placeholder='Пошук (працює по <?=$title1?>)' value="<?=$search_req?>">
 					<?php else: ?>
-						<input type="search" class="inputSearch" id="searchInput" placeholder="Пошук (працює по <?=$title?>)" value="<?=$search_req?>">
+						<input type="search" class="inputSearch" id="searchInput" placeholder='Пошук (працює по <?=$title?>)' value="<?=$search_req?>">
 					<?php endif ?>
 					<input type="hidden" id="type_search" value="<?=$type['search']?>">
 					<input type="hidden" id="type_value" value="<?=$type['value']?>">
@@ -143,7 +143,11 @@
 	<div class="tableRes tableMobile">
 		<div class="row" style="width: 100%;">
 			<div class="col-lg-6">
-				<div class="title"><p class="title tableTitle">Організаційна структура ММ “Добробут”</p></div>
+					<?php if ($_GET['req']==''): ?>
+						<div class="title"><p class="title tableTitle"><?=$title1?></p></div>
+					<?php else: ?>
+						<div class="title"><p class="title tableTitle"><?=$title?></p></div>
+					<?php endif ?>
 				<p class="tableText">Співробітників: <span id="tableNumber"><?=$data['count']?></span></p>
 			</div>
 			<div class="col-lg-12 d-flex">

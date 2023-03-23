@@ -5,6 +5,9 @@ $data['org'] = $API->evaluate('getOrganizationList','');
 $data['per_type'] = $API->evaluate('getPersonalTypesList','');
 $data['per_dir'] = $API->evaluate('getPersonalDirectionsList','');
 $title1 = '';
+if ($_GET['title']) {
+	$title1 = $_GET['title'];
+}
 $ident=0;
 $back = array();
 if (isset($_GET['structure'])) {
@@ -41,6 +44,7 @@ if (isset($_GET['structure'])) {
 			$arg['list'] = $API->evaluate('getDepList',$_GET['req']);
 			$arg['type'] = $_GET['structure'];
 			$arg['fields'][$_GET['structure']] = $_GET['req'];
+			$title = $title1;
 		}else{
 			$arg['fields'][$_GET['structure']] = $_GET['req'];
 			$arg['type'] = $_GET['structure'];
@@ -64,8 +68,7 @@ if (isset($_GET['structure'])) {
 		$title2 = $data['users'][0]['der_name'];
 	}
 	if ($_GET['structure']=='department_id') {
-		$title = $_GET['title'];
-		$title1 = $_GET['title'];
+		$title2 = $_GET['title'];
 	}
 	$title = $title2;
 	$data['count'] = $users['count'];

@@ -29,7 +29,11 @@ function loadwebpage(e){
 				}
 			console.log(linked);
 			}
-			$.get( location.href+"model/structure.php?structure="+$(e).data('sttype')+"&req="+$(e).data('svalue')+"&pod="+$(e).data('sttype')+"&id="+$(e).data('ids')+"&back="+JSON.stringify(linked), function( data ) {
+			title = '';
+			if ($(e).data('titled')) {
+				title = $(e).data('titled');
+			}
+			$.get( location.href+"model/structure.php?structure="+$(e).data('sttype')+"&req="+$(e).data('svalue')+"&pod="+$(e).data('sttype')+"&id="+$(e).data('ids')+"&back="+JSON.stringify(linked)+"&title="+title, function( data ) {
 			  $( "body" ).html(data);
 			});
 		}else{
