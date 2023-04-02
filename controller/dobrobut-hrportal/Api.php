@@ -762,7 +762,7 @@ class Api implements Evaluator
     }
     function getPods($argument){
         $type = $argument['type'];
-        $res = @pg_query($this->pg,"SELECT ".$type.", COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true and user_positions.post_type='M' GROUP BY ".$type."");
+        $res = @pg_query($this->pg,"SELECT `".$type."`, COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true and user_positions.post_type='M' GROUP BY `".$type."`");
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
                 $count = $row['count'];
