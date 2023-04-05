@@ -1,5 +1,7 @@
 <?php 
 require_once '../controller/controller.php';
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 $data['tmp'] = 'main';
 $data['org'] = $API->evaluate('getOrganizationList','');
 $data['per_type'] = $API->evaluate('getPersonalTypesList','');
