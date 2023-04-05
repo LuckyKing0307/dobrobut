@@ -1,20 +1,11 @@
 linked = new Array();
 user_linked = new Array();
 user_linked[0]='';
-$('body').click(function( e ) {
-	if ($(e.target).data('seltype')) {
-		openSelect(e.target)
-	}else {
-		closeAllSelect()
-	}
-})
+clicked = 0;
 function loadwebpage(e){
 	if ($(e).data('userback')) {
 		user_linked.splice($(e).data('userback'), 1);
-		console.log($(e).data('userback'));
 	}
-
-
 	if ($(e).data('sttype')) {
 		if ($(e).data('pod')) {
 			if ($(e).data('podid')) {
@@ -27,7 +18,6 @@ function loadwebpage(e){
 						linked[linked.length] = link_datas;
 					}
 				}
-			console.log(linked);
 			}
 			title = '';
 			if ($(e).data('titled')) {
@@ -53,14 +43,6 @@ function loadwebpage(e){
 		$('#searchInput').keyup(function(e){
 			if (e.key=='Enter') {
 				searchUser();
-			}
-		})
-		$('body').off("click");
-		$('body').click(function( e ) {
-			if ($(e.target).data('seltype')) {
-				openSelect(e.target);
-			}else {
-				closeAllSelect()
 			}
 		})
 	}
@@ -96,13 +78,18 @@ function searchUser(e){
 				searchUser();
 			}
 		})
-		$('body').click(function( e ) {
-			if ($(e.target).data('seltype')) {
-				openSelect(e.target)
-			}else {
-				closeAllSelect()
-			}
-		})		
+		if (clicked==0) {
+			clicked = 1;
+			console.log(clicked);
+			$('body').bind('click',function(e) {
+				console.log('asdasd2');
+				if ($(e.target).data('seltype')) {
+					openSelect(e.target)
+				}else {
+					closeAllSelect()
+				}
+			})
+		}
 }
 function paging(e){
 	if ($('#searchInput').val()!='') {
@@ -119,13 +106,22 @@ function paging(e){
 			}
 		})
 	}
-	$('body').click(function( e ) {
-		if ($(e.target).data('seltype')) {
-			openSelect(e.target)
-		}else {
-			closeAllSelect()
+		$("body").unbind();
+
+		// if ($._data($("body")[0], "events")!=true) {
+		if (clicked==0) {
+			clicked = 1;
+			console.log(clicked);
+			$('body').bind('click',function(e) {
+				console.log('asdasd2');
+				if ($(e.target).data('seltype')) {
+					openSelect(e.target)
+				}else {
+					closeAllSelect()
+				}
+			})
 		}
-	})		
+		// }	
 }
 function searchPage(e){
 	if ($(e).data('palcement')) {
@@ -138,15 +134,24 @@ function searchPage(e){
 		})
 	}
 
-	$('body').off("click");
-	$('body').click(function( e ) {
-		if ($(e.target).data('seltype')) {
-			console.log('adsadasd');
-			openSelect(e.target);
-		}else {
-			closeAllSelect()
+	// $('body').off("click");
+		// $("body").unbind();
+
+		// if ($._data($("body")[0], "events")!=true) {
+			
+		if (clicked==0) {
+			clicked = 1;
+			console.log(clicked);
+			$('body').bind('click',function(e) {
+				console.log('asdasd2');
+				if ($(e.target).data('seltype')) {
+					openSelect(e.target)
+				}else {
+					closeAllSelect()
+				}
+			})
 		}
-	})
+		// }
 }
 function getUser(e){
 	if ($(e).data('parentid')) {
@@ -223,15 +228,19 @@ function pagingDep(e){
 	  $( "body" ).html(data);
 	});
 
-	$('body').off("click");
-	$('body').click(function( e ) {
-		if ($(e.target).data('seltype')) {
-			console.log('adsadasd');
-			openSelect(e.target);
-		}else {
-			closeAllSelect()
-		}
-	})
+	
+		$("body").unbind();
+		// if ($._data($("body")[0], "events")!=true) {
+			$('body').click(function(e) {
+				console.log('asdasd1');
+				if ($(e.target).data('seltype')) {
+					console.log($(e.target));
+					openSelect(e.target)
+				}else {
+					closeAllSelect()
+				}
+			})
+		// }
 }
 function openSelect(e) {
 		let selectid = $(e).data('seltype');
@@ -334,22 +343,27 @@ function tree(e){
 	if (e=='back') {
 		$.get( location.href+"model/main.php", function( data ) {
 		  $( "body" ).html(data);
+
 		});
 		$('#searchInput').keyup(function(e){
 			if (e.key=='Enter') {
 				searchUser();
 			}
 		})
-		$('body').click(function( e ) {
-			console.log('asdasd123321');
-			if ($(e.target).data('seltype')) {
-				openSelect(e.target)
-			}else {
-				closeAllSelect()
-			}
-		})
+		if (clicked==0) {
+			clicked = 1;
+			console.log(clicked);
+			$('body').bind('click',function(e) {
+				console.log('asdasd2');
+				if ($(e.target).data('seltype')) {
+					openSelect(e.target)
+				}else {
+					closeAllSelect()
+				}
+			})
+		}
 	}else{
-		$.get( location.href+"model/tree.php", function( data ) {
+		$.get( location.href+"model/tree.php", function( data ) {	
 		  $( "body" ).html(data);
 		});
 	}
