@@ -41,12 +41,10 @@
 	<div class="userInfo">
 		<div class="row">
 			<div class="col-lg-5 d-flex align-items-center">
-				<?php if ($data[$main]['photo']!=''): ?>
-					<div class="ava" style='background-image:url("<?=$data[$main]['photo']?>");
-    background-repeat: no-repeat;
-    background-size: cover; '></div>
-				<?php else: ?>
-					<div class="ava"><?=$first_character_name?><?=$first_character_lastname?></div>
+				<?php if (isset($data[$main]['photo'])): ?>
+					<div class="ava" data-imgsrc="<?=$data[$main]['photo']?>" data-names="<?=$first_character_name?><?=$first_character_lastname?>" style='
+			    background-repeat: no-repeat;
+			    background-size: cover; '></div>
 				<?php endif ?>
 
 				<div class="name title"><?=$data[$main]['last_name']?> <?=$first_character_name?>.<?=$first_character_lastname?>.</div>
@@ -257,5 +255,42 @@
 		</div>
 	</div>
 </div>
+
 <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer>
+	// CHECK IF IMAGE EXISTS
+function checkIfImageExists(url, callback) {
+  const img = new Image();
+  img.src = url;
+  
+  if (img.complete) {
+    callback(true);
+  } else {
+    img.onload = () => {
+      callback(true);
+    };
+    
+    img.onerror = (e) => {
+      callback(false);
+    };
+  }
+}
+
+
+ava = $('.ava');
+// USAGE
+if (ava.data('imgsrc')) {
+	console.log(ava.data('imgsrc'))
+	checkIfImageExists(ava.data('imgsrc'), (exists) => {
+	  if (exists) {
+ 		ava.css("background-image", "url("+ava.data('imgsrc')+")");
+	  } else {
+ 		ava.html( ava.data('names') );
+ 		ava.attr('src','ссылка находится на другом хостинге');
+	  }
+	});	
+}else{
+ 	ava.html( ava.data('names') );
+}
+</script>
