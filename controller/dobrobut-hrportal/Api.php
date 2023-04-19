@@ -546,7 +546,7 @@ class Api implements Evaluator
         } else {
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
-        $result['sql'] = "select COUNT(users.id) from users JOIN user_positions ON user_positions.user_id=users.id JOIN departments ON departments.id=user_positions.department_id JOIN personal_types ON user_positions.position_type=personal_types.id JOIN positions ON user_positions.position_id=positions.id JOIN organizations ON user_positions.organization_id=organizations.id where ".$where_text." users.active=true and user_positions.post_type='M' ".$where;
+        $result['sql'] = "asd12";
         $result['count'] = $count;
         $result['count_list'] = $count;
         return $result;
@@ -755,14 +755,14 @@ class Api implements Evaluator
         } else {
             throw new Exception(em('DB-0002','DB Select error: '.pg_last_error($this->pg)));
         }
-        $result['sql'] = "SELECT count(*) FROM user_positions where post_type='M'";
+        $result['sql'] = "ads";
         $result['count_list'] = $count_list;
         $result['count'] = $count;
         return $result;
     }
     function getPods($argument){
         $type = $argument['type'];
-        $res = @pg_query($this->pg,"SELECT `".$type."`, COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true and user_positions.post_type='M' GROUP BY `".$type."`");
+        $res = @pg_query($this->pg,"SELECT ".$type.", COUNT(*) FROM users JOIN user_positions ON user_positions.user_id=users.id WHERE users.active=true and user_positions.post_type='M' GROUP BY ".$type."");
         if ($res !== false) {
             while ($row = @pg_fetch_array($res)) {
                 $count = $row['count'];
