@@ -187,7 +187,7 @@
 					</div>
 					<div class="detail d-flex">
 						<p class="detailTitle">Керівник</p>
-						<?php if (is_array($data[$main]['header'])): ?>
+						<?php if (is_array($data[$main]['header']) and ($data[$main]['header']['last_name'].''.$first_character_headername)!=($data[$main]['last_name'].''.$first_character_name)): ?>
 						<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$main]['header']['id']?>"  data-parentid="<?=$data[$main]['id']?>"><?=$data[$main]['header']['last_name']?> <?=$first_character_headername?>.<?=$first_character_headerlastname?>.</p>
 						<?php else: ?>
 						<p class="detailText">_</p>
@@ -199,7 +199,7 @@
 					</div>
 					<div class="detail d-flex">
 						<p class="detailTitle lastdetailTitle">Лідер напрямку</p>
-						<?php if (is_array($data[$main]['header'])): ?>
+						<?php if (is_array($data[$main]['der_header'])): ?>
 						<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$main]['der_header']['id']?>"  data-parentid="<?=$data[$main]['id']?>"><?=$data[$main]['der_header']['last_name']?> <?=$first_character_leadername?>.<?=$first_character_leaderlastname?>.</p>
 						<?php else: ?>
 						<p class="detailText">_</p>
@@ -228,7 +228,7 @@
 								</div>
 								<div class="detail d-flex">
 									<p class="detailTitle lastdetailTitle">Керівник <?=$work_count?></p>
-									<?php if (is_array($data[$i]['header'])): ?>
+									<?php if (is_array($data[$i]['header']) and ($data[$i]['header']['last_name'].''.$first_character_headername)!=($data[$i]['last_name'].''.$first_character_name)): ?>
 									<p class="userLink clickable detailText" style="font-size: 14px;"  onclick="getUser(this)" data-userid="<?=$data[$i]['header']['id']?>"  data-parentid="<?=$data[$i]['id']?>"><?=$data[$i]['header']['last_name']?> <?=mb_substr($data[$i]['header']['name'], 0, 1)?>.<?=mb_substr($data[$i]['header']['second_name'], 0, 1)?>.</p>
 									<?php else: ?>
 									<p class="detailText">_</p>
