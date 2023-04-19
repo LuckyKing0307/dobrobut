@@ -40,7 +40,8 @@
 										<p >Керівник: <span style="font-size: 14px;" class="userLink clickable" onclick="getUser(this)" data-userid="<?=$data['list'][$i]['header_id']?>"><?=$data['list'][$i]['header_name']?></span></p>
 									<?php endif ?>
 									<?php if (isset($data['pod']['list'][$data['list'][$i]['id']]['header'])): ?>
-										<p >Керівник: <span style="font-size: 14px;" class="userLink clickable" onclick="getUser(this)" data-userid="<?=$data['pod']['list'][$data['list'][$i]['id']]['header']['id']?>"><?=$data['pod']['list'][$data['list'][$i]['id']]['header']['last_name']?> <?=mb_substr($data['pod']['list'][$data['list'][$i]['id']]['header']['name'], 0, 1)?>.<?=mb_substr($data['pod']['list'][$data['list'][$i]['id']]['header']['second_name'], 0, 1)?></span></p>
+										<!-- <p >Керівник: <span style="font-size: 14px;" class="userLink clickable" onclick="getUser(this)" data-userid="<?=$data['pod']['list'][$data['list'][$i]['id']]['header']['id']?>"><?=$data['pod']['list'][$data['list'][$i]['id']]['header']['last_name']?> <?=mb_substr($data['pod']['list'][$data['list'][$i]['id']]['header']['name'], 0, 1)?>.<?=mb_substr($data['pod']['list'][$data['list'][$i]['id']]['header']['second_name'], 0, 1)?></span></p> -->
+										<p style="color: #F0F8FF;">dasdasdsdsadaa</p>
 									<?php endif ?>
 									<?php if (isset($data['list'][$i]['header_id'])==false and isset($data['pod']['list'][$data['list'][$i]['id']]['header'])==false): ?>
 										<p style="color: #F0F8FF;">dasdasdsdsadaa</p>
