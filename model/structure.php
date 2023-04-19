@@ -35,7 +35,9 @@ if (isset($_GET['structure'])) {
 		}
 		if ($_GET['structure']=='department_id') {
 			$arg['list'] = $API->evaluate('getDepList',$_GET['req']);
+			$arr_dep_id['id'] = $_GET['req'];
 			$title = $_GET['title'];
+			$arg['list'][count($arg['list'])] = $arr_dep_id;
 			$title1 = $_GET['title'];
 		}
 		$request = 'getUsersByTyped';
@@ -44,6 +46,8 @@ if (isset($_GET['structure'])) {
 	}else{
 		if ($_GET['structure']=='department_id') {
 			$arg['list'] = $API->evaluate('getDepList',$_GET['req']);
+			$arr_dep_id['id'] = $_GET['req'];
+			$arg['list'][count($arg['list'])] = $arr_dep_id;
 			$arg['type'] = $_GET['structure'];
 			$arg['fields'][$_GET['structure']] = $_GET['req'];
 			$title = $title1;
@@ -54,9 +58,6 @@ if (isset($_GET['structure'])) {
 		$request = 'getUsersSearch';
 		$backs = "loadwebpage(this)";
 	}
-
-
-
 	
 	$users = $API->evaluate($request,$arg);
 	$data['users'] = $users['list'];
