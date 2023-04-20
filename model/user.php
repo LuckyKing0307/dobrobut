@@ -1,7 +1,5 @@
 <?php 
 require_once '../controller/controller.php';
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
 	if ($_GET['id']) {
 		$type_value = '';
 		if (isset($_GET['type_value'])) {
@@ -32,7 +30,5 @@ error_reporting(E_ALL);
 		$first_character_name = mb_substr($data[$main]['name'], 0, 1);
 		$first_character_lastname = mb_substr($data[$main]['second_name'], 0, 1);
 		$result = require('../view/user.php');
-		echo "<pre>";
-		print_r($data);
 	}
 ?>
