@@ -1,5 +1,5 @@
 <?php 
-// require_once '../controller/controller.php';
+require_once '../controller/controller.php';
 // ini_set('display_errors', 1);
 // error_reporting(E_ALL);
 $data['tmp'] = 'main';
