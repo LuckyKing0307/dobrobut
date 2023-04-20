@@ -868,7 +868,9 @@ class Api implements Evaluator
             $null=' and parent_id is null';
         }
         $res = @pg_query($this->pg,"SELECT  * FROM departments where ".$searcher."='".$id."'".$null);
-        $count = 0;
+        
+        $counts_users = @pg_query($this->pg,"SELECT COUNT(*) FROM user_positions where department_id='".$job."' ");
+        $count = $count+@pg_fetch_array($counts_users)['count'];
         if ($res !== false) {
             if (@pg_num_rows($res)!=0) {
                 while ($row = @pg_fetch_array($res)) {
